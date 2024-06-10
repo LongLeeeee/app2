@@ -70,7 +70,10 @@ namespace APP
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            tcpClient.Close();
+            if (tcpClient != null)
+            {
+                tcpClient.Close();
+            }
             Application.Exit();
         }
 

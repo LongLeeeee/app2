@@ -98,11 +98,17 @@ namespace APP
             {
                 if(response == "matched")
                 {
-                    panel2.Visible = true;
+                    Invoke(new Action(() =>
+                    {
+                        panel2.Visible = true;
+                    }));
                 }
                 else
                 {
-                    label_old.Text = "Mật khẩu không chính xác! Vui lòng thử lại";
+                    Invoke(new Action(() =>
+                    {
+                        label_old.Text = "Mật khẩu không chính xác! Vui lòng thử lại";
+                    }));
                 }
             }
         }
