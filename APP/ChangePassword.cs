@@ -106,6 +106,14 @@ namespace APP
                 }
             }
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            LostPassword form = new LostPassword(username, email, writer, reader);
+            form.ShowDialog();
+            
+        }
+
         private void changepass()
         {
             string newpass = tb_newpass.Text.Trim();

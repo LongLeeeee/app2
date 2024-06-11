@@ -11,12 +11,14 @@ using System.IO;
 using System.IO.Pipes;
 using System.Linq;
 using System.Net.Sockets;
+using System.Reflection;
 using System.Reflection.Emit;
 using System.Runtime.InteropServices.ComTypes;
 using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Timers;
 using System.Web;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
@@ -55,23 +57,14 @@ namespace APP
         private WaveOut waveOut;
         private BufferedWaveProvider bufferedWaveProvider;
         private NetworkStream stream;
+        private System.Windows.Forms.Timer timer;
+        private DateTime startTime;
+        bool isCall = false;
+        
         public Chat(TcpClient tcpClient, string username, string Email)
         {
-            this.client = tcpClient;
-            this.username = username;
-            this.isRunning = true;
-            InitializeComponent();
-            this.Load += LoadDatatoApp;
-            EmotionAndImage.Visible = false;
-            reddd.Visible = false ;
-            email = Email;
-        }
-
-        private void LoadData()
-        {
-
             waveIn = new WaveIn();
-            waveIn.WaveFormat = new WaveFormat(44100, 1); // Ensure format matches server
+            waveIn.WaveFormat = new WaveFormat(44100, 1);
             waveIn.BufferMilliseconds = 50;
             waveIn.DataAvailable += WaveIn_DataAvailable;
 
@@ -79,10 +72,46 @@ namespace APP
             bufferedWaveProvider = new BufferedWaveProvider(new WaveFormat(44100, 1));
             waveOut.Init(bufferedWaveProvider);
 
+            this.client = tcpClient;
+            this.username = username;
+            this.isRunning = true;
+            InitializeComponent();
+            
+            this.Load += LoadDatatoApp;
+            EmotionAndImage.Visible = false;
+            reddd.Visible = false ;
+            email = Email;
+            Callpanel.Visible = false;
+        }
+        private void InitializeTimer()
+        {
+            startTime = DateTime.Now;
+
+            timer = new System.Windows.Forms.Timer();
+            timer.Interval = 1000; // 1 giây
+            timer.Tick += Timer_Tick;
+            timer.Start();
+        }
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            TimeSpan elapsedTime = DateTime.Now - startTime;
+            Invoke(new Action(() =>
+            {
+                texttimeCall.Text = string.Format("{0:D2}:{1:D2}", elapsedTime.Minutes, elapsedTime.Seconds);
+
+            }));
+           
+
+        }
+        private void LoadData()
+        {
 
 
             
-            
+
+
+
+
             reader = new StreamReader(client.GetStream());
             writer = new StreamWriter(client.GetStream());
             writer.AutoFlush = true;
@@ -148,7 +177,7 @@ namespace APP
                             // gán sự kiện hiển thị flowlayoutpanel khi ấn vào chatlistuser tương ứng
                             chatlistUsers[i].MouseDown += click_show_panel;
                             ContactNameConversation.Text = "Unknow";
-                            ContactNameMore.Text = "Unknow";
+                            //ContactNameMore.Text = "Unknow";
                             // thêm chatlistuser vào panel bên trái 
                             ChatlistFlowPanel.Controls.Add(chatlistUsers[i]);
                         }));
@@ -276,6 +305,7 @@ namespace APP
             thread.Start();
             thread.IsBackground = true;
         }
+
         //cấu trúc 1 tin nhắn được gửi đi 
         private void LoadDatatoApp(object sender, EventArgs e)
         {
@@ -302,7 +332,7 @@ namespace APP
         {
             Detail.Visible = false;
             listFriend.Visible = false;
-            MoreConversation.Visible = false;
+            //MoreConversation.Visible = false;
             searchchat.Visible = false;
         }
         private void Colorcolumn1()
@@ -469,7 +499,7 @@ namespace APP
                         // gán sự kiện hiển thị flowlayoutpanel khi ấn vào chatlistuser tương ứng
                         chatlistUsers[i].MouseDown += click_show_panel;
                         ContactNameConversation.Text = "Unknow";
-                        ContactNameMore.Text = "Unknow";
+                        //ContactNameMore.Text = "Unknow";
                         // thêm chatlistuser vào panel bên trái 
                         ChatlistFlowPanel.Controls.Add(chatlistUsers[i]);
                     }
@@ -491,7 +521,7 @@ namespace APP
                         bunifuPanel12.Visible = true;
                         bunifuTextBox3.Clear();
                         ContactNameConversation.Text = item.Key.username;
-                        ContactNameMore.Text = item.Key.username;
+                        //ContactNameMore.Text = item.Key.username;
                         talkWith = item.Key.username;
                         
                         if(clickedChatListUser.username == ContactNameConversation.Text)
@@ -543,17 +573,10 @@ namespace APP
             }
 
         }
-
+        
         private void More_Click(object sender, EventArgs e)
         {
-            if(MoreConversation.Visible == false)
-            {
-                MoreConversation.Visible = true;
-            }
-            else
-            {
-                MoreConversation.Visible = false;
-            }
+            
             
         }
         private void convertRoomList()
@@ -724,7 +747,7 @@ namespace APP
                         string senderName = reader.ReadLine();
                         string imageData = reader.ReadLine();
 
-                       
+
                         receivedImage = StringToImage(imageData);
                         string savePath = "Resources\\";
                         string fileName = $"{senderName}_{DateTime.Now:yyyyMMddHHmmss}.png";
@@ -732,13 +755,13 @@ namespace APP
 
                         try
                         {
-                            
+
                             if (!System.IO.Directory.Exists(savePath))
                             {
                                 System.IO.Directory.CreateDirectory(savePath);
                             }
 
-                          
+
                             using (var bmp = new Bitmap(receivedImage))
                             {
                                 bmp.Save(fullPath, System.Drawing.Imaging.ImageFormat.Png);
@@ -820,7 +843,7 @@ namespace APP
                                 {
                                     ReIcon re = new ReIcon();
                                     re.image = Image.FromFile(Location);
-                                    
+
                                     item.Value.Controls.Add(re);
                                 }));
                             }
@@ -828,8 +851,8 @@ namespace APP
                     }
                     else if (messageFromServer == "AddFriend")
                     {
-                       
-                       
+
+
                         string sender = reader.ReadLine();
                         if (keyValuePairs2.ContainsKey(sender))
                         {
@@ -847,7 +870,7 @@ namespace APP
 
 
 
-                        
+
                         string userName = reader.ReadLine();
                         Invoke(new Action(() =>
                         {
@@ -858,12 +881,12 @@ namespace APP
 
 
 
-                            string[] newFriendList = new string[friendList.Length + 1];                            
-                           for (int i = 0; i < friendList.Length; i++)
+                            string[] newFriendList = new string[friendList.Length + 1];
+                            for (int i = 0; i < friendList.Length; i++)
                             {
                                 newFriendList[i] = friendList[i];
                             }
-                            newFriendList[friendList.Length] = userName;                           
+                            newFriendList[friendList.Length] = userName;
                             friendList = newFriendList;
 
 
@@ -879,7 +902,7 @@ namespace APP
                             temp.MouseDown += click_show_panel;
                             // thêm chatlistuser vào panel bên trái 
                             ChatlistFlowPanel.Controls.Add(temp);
-                            
+
                         }));
                         if (keyValuePairs2.ContainsKey(userName))
                         {
@@ -954,13 +977,22 @@ namespace APP
                     {
                         MessageBox.Show("Tên nhóm đã tồn tại");
                     }
-                    else if(messageFromServer == "INCOMINGCALL")
+                    else if (messageFromServer == "INCOMINGCALL")
                     {
                         string sender = reader.ReadLine();
                         Invoke(new Action(() =>
                         {
-                            Reform  = new CallWaitRe(sender, client, writer, reader, username);
+                            Reform = new CallWaitRe(sender, client, writer, reader, username);
                             Reform.Show();
+                        }));
+                    }
+                    else if (messageFromServer == "changename_success")
+                    {
+                        string newname = reader.ReadLine();
+                        MessageBox.Show("Đổi tên thành công");
+                        Invoke(new Action(() =>
+                        {
+                            bunifuLabel1.Text = newname;
                         }));
                     }
                     else if (messageFromServer == "NguoiGoiCup")
@@ -983,11 +1015,11 @@ namespace APP
                     else if (messageFromServer == "NguoiNhanChapNhan")
                     {
                         string nguoigoi = reader.ReadLine();
+
                         Invoke(new Action(() =>
                         {
                             Reform.Close();
-                            Callform = new Call(nguoigoi, writer, reader,username, waveIn);
-                            Callform.Show();
+
 
                         }));
                         call();
@@ -996,37 +1028,75 @@ namespace APP
                     else if (messageFromServer == "NguoiNhanChapNhanNG")
                     {
                         string nguoinhancuoigoi = reader.ReadLine();
+
                         Invoke(new Action(() =>
                         {
                             Seform.Close();
-                            Callform = new Call(nguoinhancuoigoi, writer, reader,username, waveIn);
-                            Callform.Show();
+
 
                         }));
                         call();
                     }
-                    else if(messageFromServer =="CALLING") 
+                    else if (messageFromServer == "CALLING")
                     {
-                        
-                            byte[] buffer = new byte[16384];
-                            while (true)
+
+                        byte[] buffer = new byte[16384];
+                        while (isCall)
+                        {
+                            try
                             {
-                                try
+                                int bytesRead = stream.Read(buffer, 0, buffer.Length);
+                                string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
+                                if(message == "END_CALL")
                                 {
-                                    int bytesRead = stream.Read(buffer, 0, buffer.Length);
-                                    if (bytesRead == 0)
+                                    Invoke(new Action(() =>
                                     {
-                                        break; // Server disconnected
+
+                                        Callpanel.Visible = false;
+                                        waveIn.DataAvailable -= WaveIn_DataAvailable;
+
+                                    }));
+                                    string endCallMessage = "END_CALL_2";
+                                    byte[] endCallBytes = Encoding.UTF8.GetBytes(endCallMessage);
+
+                                    if (stream != null && stream.CanWrite)
+                                    {
+                                        stream.Write(endCallBytes, 0, endCallBytes.Length);
+                                        stream.Flush();
                                     }
-                                    bufferedWaveProvider.AddSamples(buffer, 0, bytesRead);
+                                    
+                                   
+                                    waveIn.StopRecording();
+                                    waveOut.Stop();
+                                    waveIn.Dispose();
+                                    waveOut.Dispose();
+                                    //stream.Close();
+                                    isCall = false;
+                                    break;
+
                                 }
-                                catch
+                                if (bytesRead == 0)
                                 {
-                                    break; // Handle connection errors
+                                    break; // Server disconnected
                                 }
+                                bufferedWaveProvider.AddSamples(buffer, 0, bytesRead);
+
                             }
+                            catch
+                            {
+                                break; // Handle connection errors
+                            }
+                        }
                         
+                        MessageBox.Show("client close call");
                         
+
+                    }
+                    else if (messageFromServer == "CALL_END")
+                    {
+
+                       
+                      
                     }
 
                 }
@@ -1036,27 +1106,71 @@ namespace APP
                 
             }
         }
+
+        
         private void call()
         {
+           
+            Invoke(new Action(() =>
+            {
+                EmotionAndImage.Visible = true;
+                Callpanel.Visible = true;
+                InitializeTimer();
+
+            }));
+            
+            
+           
+            isCall = true;
             stream = client.GetStream();
+            writer = new StreamWriter(stream);
             writer.WriteLine("CALLING");
             writer.WriteLine(username + "|" + ContactNameConversation.Text);
-            waveIn.StartRecording();
-           
-            waveOut.Play();
+            writer.Flush();
 
             
+
+            waveIn.StartRecording();
+            waveOut.Play();
+
+
+        }
+        private void callclose(object sender, EventArgs e)
+        {
+            
+            string endCallMessage = "END_CALL";
+            byte[] endCallBytes = Encoding.UTF8.GetBytes(endCallMessage);
+
+            if (stream != null && stream.CanWrite)
+            {
+                stream.Write(endCallBytes, 0, endCallBytes.Length);
+                stream.Flush();
+            }
+            Invoke(new Action(() =>
+            {
+                
+                Callpanel.Visible = false;
+                waveIn.DataAvailable -= WaveIn_DataAvailable;
+
+            }));
+
+            
+            waveIn.StopRecording();
+            waveOut.Stop();
+            waveIn.Dispose();
+            waveOut.Dispose();
+            isCall = false;
+            //stream.Close();
+
+
+
         }
         private void WaveIn_DataAvailable(object sender, WaveInEventArgs e)
         {
-            try
-            {
+            
                 stream.Write(e.Buffer, 0, e.BytesRecorded);
-            }
-            catch
-            {
-              
-            }
+            
+            
         }
         private Image StringToImage(string imageDataString)
         {
@@ -1463,6 +1577,13 @@ namespace APP
             SendIcon(bt.Tag.ToString());
             EmotionAndImage.Visible = false;
         }
+
+        private void Callpanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        
 
         private void btn_changepass_Click(object sender, EventArgs e)
         {
