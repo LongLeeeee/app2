@@ -187,20 +187,23 @@
         fyerrQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="Name.BaseStylesheet" xml:space="preserve">
+  <data name="NameUser.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semibold'; font-size: 9.75pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
   <data name="bunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAFIAAAAcCAYAAADyfuiHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF2SURBVGhD7ZqxTgJBEIanpLS0pPQRLC0tLSlpfAsLH8DE
-        xNcwsSOxuj0qSgp7EwoaDRGiwUQK/X9vScjdHDDGjn+Sbw9m9zbhyy0Lc2etkawDemBgpY3BK/g+MPiZ
-        x3BQgD44ynb2jGTnmGAGFnlCUdo7eIOby2xpS9B4soffE/zJRGlzMIKn42ytFpRY2gTHr42TRDt01c32
-        NoJXoiRGGWd7OarvRC3nOB9wd72W2EGCG4s3UOxmBocnFNnHG+5I3iCxi8JWON5SZNHoFDGSPVPk1O0U
-        EVYUuXQ6RBQ3KeK4SRHHTYo4blLEcZMijpsUcdDwl7nfKfYHzSFWvv8fNKNGUsTgv0M0Vza0T3eA2Jd7
-        iuzihWqRf2cOhxfrmuQNEiqlReEdhWSPlURGVdx9agwU20n2Amq3aFnl1Q4egZXxs2yvFslOMWBihTaf
-        VqrlzCuxReI6qmV+B7QBNVnAzxAEnrigcW7rSU9bwMESDEAv26mF2Q/Ifw4AVtBgxgAAAABJRU5ErkJg
-        gg==
+        iVBORw0KGgoAAAANSUhEUgAAAG0AAAAiCAYAAABV9lfvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAGUSURBVGhD7duxSgNBFAXQV6a0tEzpJ1imtLS0TONfWPgB
+        guBvCHaC1U5SpdzCXkiRRglJUBRMofe5sxB2X0QL1xu4D84meTvZIpdsBjJjWytZD07g1kZWwhN8yJ/x
+        z7fE513AEPZyEj+sZEe4wBxW+YLSrWdYIIfTnMg35ekmu/l6Q3wx6dYSJshkPyfUKA9sZFM8vm+8STh4
+        Lv2c1Eb5N0yBMStzUrmq3zDdErm9IKfzOrAeGj7piAYKlznyOvDQhnjhs5VokDApbI3HSw+taJ0UXske
+        PLRZeFJYrT201+CEMAubwi1sCrewKdzCpnALm8ItbAq3sCncwqZwC5vCLWwKt7Ap3MKmcMPB/6OJTwon
+        HLSecdfgMGk1hZf//4nDmY3tLRwgjK49tD6eaCXWblgir+N6RdYFGlrcw8zXpCa7qwLzqpbR3bcGCo9k
+        j9DYlOHr6TSTZOXrHQc5qUYlO8SAqRWamFCobon+DdsSWF3VrfIKNDn5XytkMYZf7FPzdH16mbRHrVO+
+        pNE3cvqGzrDMPgEO5ayFYIizywAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="lb_username.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semibold'; font-size: 9.75pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
 </root>

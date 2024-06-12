@@ -15,15 +15,23 @@ namespace APP
     public partial class UserFriend : UserControl
     {
         TcpClient client;
-        string userName;
+        string userName, name;
         int request;
+        StreamWriter sw;
+        StreamReader sr;
         public UserFriend(TcpClient client, string userName)
         {
             InitializeComponent();
             this.client = client;
             this.userName = userName;
-            
+            sw = new StreamWriter(client.GetStream()); sw.AutoFlush = true;
+            sr = new StreamReader(client.GetStream());
         }
+        public string getname(string abc)
+        {
+            sw.WriteLine($"Name|{abc}");
+
+            return sr.ReadLine(); }
         public void setButton(string text)
         {
             bunifuButton1.Text = text;
@@ -33,6 +41,7 @@ namespace APP
         [Category("custom")]
         public string username
         {
+           
             get
             {
                 return _username;
@@ -40,7 +49,8 @@ namespace APP
             set
             {
                 _username = value;
-                Name.Text = value;
+                NameUser.Text = $"{getname(value)}" ;
+                lb_username.Text = value;
             }
         }
         [Category("custom")]
@@ -63,8 +73,6 @@ namespace APP
             if (bunifuButton1.Text == "Kết bạn")
             {
                 bunifuButton1.Text = "Đã gửi";
-                StreamWriter sw = new StreamWriter(client.GetStream());
-                sw.AutoFlush = true;
                 sw.WriteLine("AddFriend");
                 //tên người gửi
                 sw.WriteLine(userName);
@@ -81,6 +89,12 @@ namespace APP
                 //tên người nhận
                 sw.WriteLine(username);
             }
+        }
+
+        private void UserFriend_Load(object sender, EventArgs e)
+        {
+           
+            
         }
     }
 }
