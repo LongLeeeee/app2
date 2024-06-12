@@ -31,6 +31,7 @@ namespace APP
             
             //writer.AutoFlush = true;
             this.OTP = GenerateCode();
+            lblPasswordError.Visible = false;
         }
         string OTP;
         TcpClient tcpClient;
@@ -125,6 +126,7 @@ namespace APP
 
         private void bunifuTextBox4_TextChanged(object sender, EventArgs e)
         {
+            lblPasswordError.Visible = true;
             string password = bunifuTextBox4.Text;
 
             if (password.Length < 8)

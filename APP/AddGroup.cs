@@ -95,7 +95,7 @@ namespace APP
                     if (friendList[i] != "")
                     {
                         user[i] = new ChatlistUser();
-                        Image image = Image.FromFile("Resources\\4.jpg");
+                        Image image = Image.FromFile("Resources\\avata.jpg");
                         // tạo ra 1 chatlistuser
                         user[i].username = friendList[i];
                         user[i].userimage = image;

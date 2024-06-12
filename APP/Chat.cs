@@ -146,7 +146,7 @@ namespace APP
                         Invoke(new Action(() =>
                         {
                             chatlistUsers[i] = new ChatlistUser();
-                            Image image = Image.FromFile("Resources\\4.jpg");
+                            Image image = Image.FromFile("Resources\\avata.jpg");
                             // tạo ra 1 chatlistuser
                             chatlistUsers[i].username = groupList[i];
                             chatlistUsers[i].userimage = image;
@@ -414,7 +414,7 @@ namespace APP
                             if (userList[i] != username)
                             {
                                 listFriends[i] = new UserFriend(client, username);
-                                Image image = Image.FromFile("Resources\\4.jpg");
+                                Image image = Image.FromFile("Resources\\avata.jpg");
                                 listFriends[i].userimage = image;
                                 listFriends[i].username = userList[i];
                                 keyValuePairs2.Add(userList[i], listFriends[i]);
@@ -441,7 +441,7 @@ namespace APP
                         if (userList[i] != username)
                         {
                             listFriends[i] = new UserFriend(client, username);
-                            Image image = Image.FromFile("Resources\\4.jpg");
+                            Image image = Image.FromFile("Resources\\avata.jpg");
                             listFriends[i].userimage = image;
                             listFriends[i].username = userList[i];
                             keyValuePairs2.Add(userList[i], listFriends[i]);
@@ -468,7 +468,7 @@ namespace APP
                     if (friendList[i] != "")
                     {
                         chatlistUsers[i] = new ChatlistUser();
-                        Image image = Image.FromFile("Resources\\4.jpg");
+                        Image image = Image.FromFile("Resources\\avata.jpg");
                         // tạo ra 1 chatlistuser
                         chatlistUsers[i].username = friendList[i];
                         chatlistUsers[i].userimage = image;
@@ -860,7 +860,7 @@ namespace APP
                         Invoke(new Action(() =>
                         {
                             ChatlistUser temp = new ChatlistUser();
-                            Image image = Image.FromFile("Resources\\4.jpg");
+                            Image image = Image.FromFile("Resources\\avata.jpg");
                             // tạo ra 1 chatlistuser
                             temp.username = userName;
 
@@ -903,7 +903,7 @@ namespace APP
                         Invoke(new Action(() =>
                         {
                             ChatlistUser temp = new ChatlistUser();
-                            Image image = Image.FromFile("Resources\\4.jpg");
+                            Image image = Image.FromFile("Resources\\avata.jpg");
                             // tạo ra 1 chatlistuser
                             temp.username = userName;
                             string[] newFriendList = new string[friendList.Length + 1];
@@ -943,7 +943,7 @@ namespace APP
                         Invoke(new Action(() =>
                         {
                             ChatlistUser temp = new ChatlistUser();
-                            Image image = Image.FromFile("Resources\\4.jpg");
+                            Image image = Image.FromFile("Resources\\avata.jpg");
                             // tạo ra 1 chatlistuser
                             temp.username = groupName;
                             temp.userimage = image;
