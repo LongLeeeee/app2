@@ -136,6 +136,9 @@
             this.conversation = new Bunifu.UI.WinForms.BunifuImageButton();
             this.bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.bunifuPanel1.SuspendLayout();
             this.bunifuPanel5.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -2239,7 +2242,7 @@
             // ChatlistFlowPanel
             // 
             this.ChatlistFlowPanel.AutoScroll = true;
-            this.ChatlistFlowPanel.BackColor = System.Drawing.Color.White;
+            this.ChatlistFlowPanel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ChatlistFlowPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ChatlistFlowPanel.Location = new System.Drawing.Point(0, 123);
             this.ChatlistFlowPanel.Margin = new System.Windows.Forms.Padding(0);
@@ -2397,12 +2400,14 @@
             // flowLayoutPanelListfriend
             // 
             this.flowLayoutPanelListfriend.AutoScroll = true;
+            this.flowLayoutPanelListfriend.BackColor = System.Drawing.Color.WhiteSmoke;
             this.flowLayoutPanelListfriend.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanelListfriend.Location = new System.Drawing.Point(0, 123);
             this.flowLayoutPanelListfriend.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanelListfriend.Name = "flowLayoutPanelListfriend";
             this.flowLayoutPanelListfriend.Size = new System.Drawing.Size(290, 697);
             this.flowLayoutPanelListfriend.TabIndex = 1;
+            this.flowLayoutPanelListfriend.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanelListfriend_Paint);
             // 
             // bunifuPanel8
             // 
@@ -2878,16 +2883,19 @@
             // 
             // bunifuPanel2
             // 
-            this.bunifuPanel2.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuPanel2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(120)))), ((int)(((byte)(125)))));
             this.bunifuPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel2.BackgroundImage")));
             this.bunifuPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuPanel2.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel2.BorderRadius = 0;
             this.bunifuPanel2.BorderThickness = 1;
+            this.bunifuPanel2.Controls.Add(this.add);
+            this.bunifuPanel2.Controls.Add(this.panel6);
             this.bunifuPanel2.Controls.Add(this.reddd);
             this.bunifuPanel2.Controls.Add(this.bunifuImageButton4);
-            this.bunifuPanel2.Controls.Add(this.add);
+            this.bunifuPanel2.Controls.Add(this.panel5);
             this.bunifuPanel2.Controls.Add(this.conversation);
+            this.bunifuPanel2.Controls.Add(this.panel4);
             this.bunifuPanel2.Controls.Add(this.bunifuPanel3);
             this.bunifuPanel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.bunifuPanel2.Location = new System.Drawing.Point(0, 30);
@@ -2906,7 +2914,7 @@
             this.reddd.Enabled = false;
             this.reddd.Image = ((System.Drawing.Image)(resources.GetObject("reddd.Image")));
             this.reddd.IsCircle = true;
-            this.reddd.Location = new System.Drawing.Point(46, 191);
+            this.reddd.Location = new System.Drawing.Point(48, 220);
             this.reddd.Name = "reddd";
             this.reddd.Size = new System.Drawing.Size(20, 20);
             this.reddd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -2935,7 +2943,7 @@
             this.bunifuImageButton4.ImageSize = new System.Drawing.Size(40, 40);
             this.bunifuImageButton4.ImageZoomSize = new System.Drawing.Size(80, 80);
             this.bunifuImageButton4.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton4.InitialImage")));
-            this.bunifuImageButton4.Location = new System.Drawing.Point(0, 260);
+            this.bunifuImageButton4.Location = new System.Drawing.Point(0, 214);
             this.bunifuImageButton4.Name = "bunifuImageButton4";
             this.bunifuImageButton4.Rotation = 0;
             this.bunifuImageButton4.ShowActiveImage = true;
@@ -2971,7 +2979,7 @@
             this.add.ImageSize = new System.Drawing.Size(40, 40);
             this.add.ImageZoomSize = new System.Drawing.Size(80, 80);
             this.add.InitialImage = ((System.Drawing.Image)(resources.GetObject("add.InitialImage")));
-            this.add.Location = new System.Drawing.Point(0, 180);
+            this.add.Location = new System.Drawing.Point(0, 311);
             this.add.Name = "add";
             this.add.Rotation = 0;
             this.add.ShowActiveImage = true;
@@ -3007,7 +3015,7 @@
             this.conversation.ImageSize = new System.Drawing.Size(40, 40);
             this.conversation.ImageZoomSize = new System.Drawing.Size(80, 80);
             this.conversation.InitialImage = ((System.Drawing.Image)(resources.GetObject("conversation.InitialImage")));
-            this.conversation.Location = new System.Drawing.Point(0, 100);
+            this.conversation.Location = new System.Drawing.Point(0, 117);
             this.conversation.Name = "conversation";
             this.conversation.Rotation = 0;
             this.conversation.ShowActiveImage = true;
@@ -3054,6 +3062,33 @@
             this.bunifuPictureBox1.TabStop = false;
             this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             this.bunifuPictureBox1.Click += new System.EventHandler(this.bunifuPictureBox1_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(120)))), ((int)(((byte)(125)))));
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 100);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(80, 17);
+            this.panel4.TabIndex = 0;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(120)))), ((int)(((byte)(125)))));
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 197);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(80, 17);
+            this.panel5.TabIndex = 1;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(120)))), ((int)(((byte)(125)))));
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 294);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(80, 17);
+            this.panel6.TabIndex = 2;
             // 
             // Chat
             // 
@@ -3195,5 +3230,8 @@
         private System.Windows.Forms.Panel Callpanel;
         private Bunifu.UI.WinForms.BunifuImageButton callClose;
         private Bunifu.UI.WinForms.BunifuLabel texttimeCall;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel5;
     }
 }

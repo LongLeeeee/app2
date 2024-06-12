@@ -60,7 +60,8 @@ namespace APP
         private System.Windows.Forms.Timer timer;
         private DateTime startTime;
         bool isCall = false;
-        
+        PictureBox logo;
+
         public Chat(TcpClient tcpClient, string username, string Email)
         {
             waveIn = new WaveIn();
@@ -82,17 +83,17 @@ namespace APP
             reddd.Visible = false ;
             email = Email;
             Callpanel.Visible = false;
-            display(false);
-            PictureBox pic = new PictureBox();
+            logo = new PictureBox();
             Image image = Image.FromFile("Resources\\logo.png");
-            pic.Image = image;
-            pic.SizeMode = PictureBoxSizeMode.Zoom;
-            pic.Dock = DockStyle.Fill;
-            pic.Visible = true;
-            panel2.Controls.Add(pic);
+            logo.Image = image;
+            logo.SizeMode = PictureBoxSizeMode.Zoom;
+            logo.Dock = DockStyle.Fill;
+            panel2.Controls.Add(logo);
+            display(false);
         }
         private void display(bool b)
         {
+            logo.Visible = !b;
             bunifuPictureBox4.Visible = b;
             ContactNameConversation.Visible = b;
             bunifuImageButton18.Visible = b;
@@ -159,6 +160,7 @@ namespace APP
                             // tạo ra 1 chatlistuser
                             chatlistUsers[i].username = groupList[i];
                             chatlistUsers[i].userimage = image;
+                            chatlistUsers[i].BorderStyle = BorderStyle.FixedSingle;
                             // tạo ra 1 flowlayoutpanel tương ứng với chatlistuser ở trên
                             FlowLayoutPanel tempFlowLayoutPanel = createFlowlayoutPanel();
                             //getRoomKey(groupList[i]);
@@ -481,6 +483,7 @@ namespace APP
                         // tạo ra 1 chatlistuser
                         chatlistUsers[i].username = friendList[i];
                         chatlistUsers[i].userimage = image;
+                        chatlistUsers[i].BorderStyle = BorderStyle.FixedSingle;
                         // tạo ra 1 flowlayoutpanel tương ứng với chatlistuser ở trên
                         FlowLayoutPanel tempFlowLayoutPanel = createFlowlayoutPanel();
                         getRoomKey(username, friendList[i]);
@@ -860,12 +863,6 @@ namespace APP
                     }
                     else if (messageFromServer == "AcceptedSuccessfullyForReceiver")
                     {
-
-
-
-
-
-
                         string userName = reader.ReadLine();
                         Invoke(new Action(() =>
                         {
@@ -924,6 +921,7 @@ namespace APP
                             newFriendList[friendList.Length] = userName;
                             friendList = newFriendList;
                             temp.userimage = image;
+                            temp.BorderStyle = BorderStyle.FixedSingle;
                             // tạo ra 1 flowlayoutpanel tương ứng với chatlistuser ở trên
                             FlowLayoutPanel tempFlowLayoutPanel = createFlowlayoutPanel();
                             getRoomKey(username, userName);
@@ -957,6 +955,8 @@ namespace APP
                             // tạo ra 1 chatlistuser
                             temp.username = groupName;
                             temp.userimage = image;
+                            temp.BorderStyle = BorderStyle.FixedSingle;
+
                             // tạo ra 1 flowlayoutpanel tương ứng với chatlistuser ở trên
                             FlowLayoutPanel tempFlowLayoutPanel = createFlowlayoutPanel();
                             getRoomKey(groupName);
@@ -1653,7 +1653,10 @@ namespace APP
 
         }
 
-        
+        private void flowLayoutPanelListfriend_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
 
         private void btn_changepass_Click(object sender, EventArgs e)
         {
