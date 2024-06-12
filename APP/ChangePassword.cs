@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -18,7 +19,7 @@ namespace APP
         string username, email;
         StreamWriter writer;
         StreamReader reader;
-        public ChangePassword(string username,string email,StreamWriter wt, StreamReader rd)
+        public ChangePassword(string username, string email, StreamWriter wt, StreamReader rd)
         {
             InitializeComponent();
             this.username = username;
@@ -26,30 +27,42 @@ namespace APP
             reader = rd;
             writer = wt;
             panel2.Visible = false;
+
+
         }
 
-        private void btn_confirm_Click(object sender, EventArgs e)
+        private async void btn_confirm_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(tb_oldpass.Text))
             {
-                Thread chk_password = new Thread(checkpass);
-                chk_password.Start();
+                try
+                {
+                    await CheckPasswordAsync();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"An error occurred: {ex.Message}");
+                }
             }
-            else {
+            else
+            {
                 label_old.Text = "Vui lòng điền mật khẩu cũ của bạn";
             }
         }
 
-        private void btn_change_Click(object sender, EventArgs e)
+
+        private async void btn_change_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(tb_newpass.Text) && !string.IsNullOrEmpty(tb_confirmpass.Text))
             {
                 if (tb_newpass.Text == tb_confirmpass.Text)
                 {
-                    Thread chg_password = new Thread(changepass);
-                    chg_password.Start();
+                    await ChangePassAsync();
                 }
-                else label_new.Text = "Mật khẩu mới và xác nhận không khớp";
+                else
+                {
+                    label_new.Text = "Mật khẩu mới và xác nhận không khớp";
+                }
             }
             else
             {
@@ -87,23 +100,36 @@ namespace APP
                 label_new.Text = "";
             }
         }
-
-        private void checkpass()
+        private async Task CheckPasswordAsync()
         {
             string oldpass = tb_oldpass.Text.Trim();
-            string command = $"checkpass|{email},{oldpass}";
-            writer.WriteLine(command);
-            string response = reader.ReadLine();
-            if (!string.IsNullOrEmpty(response))
+            string command = $"checkpass|{username}|{email}|{oldpass}";
+
+            try
             {
-                if(response == "matched")
+                await Task.Run(() =>
                 {
-                    panel2.Visible = true;
-                }
-                else
+                    writer.WriteLine(command);
+                    writer.Flush(); // Ensure data is sent immediately
+                });
+
+                string response = await Task.Run(() => reader.ReadLine());
+                if (!string.IsNullOrEmpty(response))
                 {
-                    label_old.Text = "Mật khẩu không chính xác! Vui lòng thử lại";
+                    if (response == "matched")
+                    {
+                        panel2.Visible = true;
+                        panel1.Visible = false;
+                    }
+                    else
+                    {
+                        label_old.Text = "Mật khẩu không chính xác! Vui lòng thử lại";
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred while checking password: {ex.Message}");
             }
         }
 
@@ -111,27 +137,41 @@ namespace APP
         {
             LostPassword form = new LostPassword(username, email, writer, reader);
             form.ShowDialog();
-            
+
         }
 
-        private void changepass()
+
+        private async Task ChangePassAsync()
         {
             string newpass = tb_newpass.Text.Trim();
             string command = $"changepass|{username},{email},{newpass}";
-            writer.WriteLine(command);
-            string response = reader.ReadLine();
-            if (!string.IsNullOrEmpty(response)) 
+
+            try
             {
-                if (response == "success")
+                await Task.Run(() =>
                 {
-                    MessageBox.Show("Chúc mừng bạn đã đổi mật khẩu thành công");
-                    this.Close();
-                }
-                else
+                    writer.WriteLine(command);
+                    writer.Flush(); // Ensure data is sent immediately
+                });
+
+                string response = await Task.Run(() => reader.ReadLine());
+
+                if (!string.IsNullOrEmpty(response))
                 {
-                    MessageBox.Show("Đã có lỗi xảy ra!Vui lòng thử lại sau");
-                    return;
+                    if (response == "success")
+                    {
+                        MessageBox.Show("Chúc mừng bạn đã đổi mật khẩu thành công");
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Đã có lỗi xảy ra! Vui lòng thử lại sau");
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred while changing password: {ex.Message}");
             }
         }
     }

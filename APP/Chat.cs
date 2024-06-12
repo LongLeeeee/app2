@@ -83,26 +83,7 @@ namespace APP
             email = Email;
             Callpanel.Visible = false;
         }
-        private void InitializeTimer()
-        {
-            startTime = DateTime.Now;
-
-            timer = new System.Windows.Forms.Timer();
-            timer.Interval = 1000; // 1 giây
-            timer.Tick += Timer_Tick;
-            timer.Start();
-        }
-        private void Timer_Tick(object sender, EventArgs e)
-        {
-            TimeSpan elapsedTime = DateTime.Now - startTime;
-            Invoke(new Action(() =>
-            {
-                texttimeCall.Text = string.Format("{0:D2}:{1:D2}", elapsedTime.Minutes, elapsedTime.Seconds);
-
-            }));
-           
-
-        }
+        
         private void LoadData()
         {
 
@@ -607,12 +588,15 @@ namespace APP
         // gửi tin nhắn đển server
         private void bunifuImageButton2_Click(object sender, EventArgs e)
         {
+            StreamWriter writer = new StreamWriter(client.GetStream());
+            
             if (friendList.Contains(ContactNameConversation.Text))
             {
                 tinNhan newMsg = new tinNhan { sender = username, contentMess = bunifuTextBox3.Text, receiver = ContactNameConversation.Text, roomkey = getRoomKey(username, ContactNameConversation.Text) };
                 string stringMess = JsonConvert.SerializeObject(newMsg);
                 writer.WriteLine("Message");
                 writer.WriteLine(stringMess);
+                writer.Flush();
                 string messDisplay = $"{username}: " + bunifuTextBox3.Text + "\r\n";
                 foreach (var item in chatListUserToFlowLayoutPanelMap)
                 {
@@ -641,6 +625,7 @@ namespace APP
                 writer.WriteLine(ContactNameConversation.Text);
                 writer.WriteLine(getRoomKey(ContactNameConversation.Text));
                 writer.WriteLine(userListStringForGroup);
+                writer.Flush();
                 string messDisplay = $"{username}: " + bunifuTextBox3.Text + "\r\n";
                 foreach (var item in chatListUserToFlowLayoutPanelMap)
                 {
@@ -1039,7 +1024,7 @@ namespace APP
                     }
                     else if (messageFromServer == "CALLING")
                     {
-
+                        //NetworkStream stream = client.GetStream();
                         byte[] buffer = new byte[16384];
                         while (isCall)
                         {
@@ -1064,27 +1049,34 @@ namespace APP
                                         stream.Write(endCallBytes, 0, endCallBytes.Length);
                                         stream.Flush();
                                     }
-                                    
-                                   
+
+                                    Guioutcall();
                                     waveIn.StopRecording();
-                                    waveOut.Stop();
                                     waveIn.Dispose();
+                                    waveOut.Stop();
                                     waveOut.Dispose();
-                                    //stream.Close();
                                     isCall = false;
+                                    if (timer != null)
+                                    {
+                                        timer.Stop();
+                                        timer.Tick -= Timer_Tick;
+                                        timer.Dispose();
+                                        timer = null;
+                                    }
+                                    
                                     break;
 
                                 }
                                 if (bytesRead == 0)
                                 {
-                                    break; // Server disconnected
+                                    break; 
                                 }
                                 bufferedWaveProvider.AddSamples(buffer, 0, bytesRead);
 
                             }
                             catch
                             {
-                                break; // Handle connection errors
+                                break; 
                             }
                         }
                         
@@ -1106,11 +1098,39 @@ namespace APP
                 
             }
         }
+        private void InitializeTimer()
+        {
+            startTime = DateTime.Now;
 
-        
+            timer = new System.Windows.Forms.Timer();
+            timer.Interval = 1000; 
+            timer.Tick += Timer_Tick;
+            timer.Start();
+        }
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            TimeSpan elapsedTime = DateTime.Now - startTime;
+            Invoke(new Action(() =>
+            {
+                texttimeCall.Text = string.Format("{0:D2}:{1:D2}", elapsedTime.Minutes, elapsedTime.Seconds);
+
+            }));
+
+
+        }
+        private void Guioutcall()
+        {
+            StreamWriter writer = new StreamWriter(client.GetStream());
+            writer.WriteLine("OUTCALL");
+            writer.WriteLine(username + "|" + ContactNameConversation.Text);
+            writer.Flush();
+
+        }
+
         private void call()
         {
-           
+            //StreamWriter writer = new StreamWriter(client.GetStream());
+            //NetworkStream stream = client.GetStream();
             Invoke(new Action(() =>
             {
                 EmotionAndImage.Visible = true;
@@ -1137,6 +1157,8 @@ namespace APP
         }
         private void callclose(object sender, EventArgs e)
         {
+
+            //NetworkStream stream = client.GetStream();
             
             string endCallMessage = "END_CALL";
             byte[] endCallBytes = Encoding.UTF8.GetBytes(endCallMessage);
@@ -1156,21 +1178,30 @@ namespace APP
 
             
             waveIn.StopRecording();
-            waveOut.Stop();
             waveIn.Dispose();
+            waveOut.Stop();
             waveOut.Dispose();
             isCall = false;
-            //stream.Close();
 
+            if (timer != null)
+            {
+                timer.Stop();
+                timer.Tick -= Timer_Tick;
+                timer.Dispose();
+                timer = null;
+            }
+            
 
 
         }
         private void WaveIn_DataAvailable(object sender, WaveInEventArgs e)
         {
-            
+           
+            if (stream != null && stream.CanWrite)
+            {
                 stream.Write(e.Buffer, 0, e.BytesRecorded);
-            
-            
+                
+            }
         }
         private Image StringToImage(string imageDataString)
         {
@@ -1214,7 +1245,53 @@ namespace APP
         }
 
         private void bunifuImageButton1_Click_1(object sender, EventArgs e)
+
+
         {
+            string searchText = bunifuTextBox2.Text;
+
+            if (string.IsNullOrEmpty(searchText))
+            {
+                foreach (ChatlistUser item in chatlistUsers)
+                {
+                    if (item != null)
+                    {
+                        item.Visible = true;
+                    }
+                }
+            }
+            else
+            {
+                bool foundResult = false;
+                foreach (ChatlistUser item in chatlistUsers)
+                {
+                    if (item != null)
+                    {
+                        if (item.username.IndexOf(searchText, StringComparison.OrdinalIgnoreCase) != -1)
+                        {
+                            item.Visible = true;
+                            foundResult = true; // Kết quả được tìm thấy
+                        }
+                        else
+                        {
+                            item.Visible = false;
+                        }
+                    }
+                }
+
+                // Xử lý trường hợp không tìm thấy kết quả
+                if (!foundResult)
+                {
+                    MessageBox.Show("Không tìm thấy kết quả nào.");
+                }
+            }
+
+
+
+
+
+
+            /*
             if (string.IsNullOrEmpty(bunifuTextBox2.Text))
             {
                 foreach (ChatlistUser item in chatlistUsers)
@@ -1238,7 +1315,7 @@ namespace APP
                         item.Visible = false;
                     }
                 }
-            }
+            }*/
         }
         private void bunifuButton4_Click(object sender, EventArgs e)
         {

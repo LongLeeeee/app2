@@ -25,7 +25,7 @@ namespace APP
             set
             {
                 _image = value;
-                bunifuPictureBox1.Image = value;
+                pictureBox1.Image = value;
             }
         }
     }
