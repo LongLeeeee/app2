@@ -82,17 +82,11 @@ namespace APP
             reddd.Visible = false ;
             email = Email;
             Callpanel.Visible = false;
+            bunifuPanel5.Visible = false;
         }
         
         private void LoadData()
         {
-
-
-            
-
-
-
-
             reader = new StreamReader(client.GetStream());
             writer = new StreamWriter(client.GetStream());
             writer.AutoFlush = true;
@@ -489,6 +483,7 @@ namespace APP
         }
         private void click_show_panel(object sender, EventArgs e)
         {
+            bunifuPanel5.Visible = true;
             //bắt sự kiện xem chatlistuser nào được ấn
             ChatlistUser clickedChatListUser = (ChatlistUser)sender;    
             if (chatListUserToFlowLayoutPanelMap.ContainsKey(clickedChatListUser))
@@ -1410,8 +1405,6 @@ namespace APP
         }
         private void bunifuImageButton6_Click(object sender, EventArgs e)
         {
-
-
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
@@ -1431,13 +1424,8 @@ namespace APP
                                 sef.filename = fileName;
                                 Invoke(new Action(() =>
                                 {
-
                                     item.Value.Controls.Add(sef);
                                 }));
-                                // Get the network stream from the client
-
-
-                                // Create a StreamWriter to write metadata to the network stream
                                 StreamWriter writer = new StreamWriter(client.GetStream());
                                 
                                     writer.AutoFlush = true;
@@ -1450,7 +1438,6 @@ namespace APP
                                     int bytesRead;
                                     NetworkStream stream = client.GetStream();
 
-                                // Open the file and send its content using BinaryWriter
                                 using (FileStream fileStream = new FileStream(filePath, FileMode.Open, FileAccess.Read))
                                 { 
                                
@@ -1462,7 +1449,6 @@ namespace APP
                             }
                             catch (Exception ex)
                             {
-                                // Handle or log the exception
                                 MessageBox.Show($"An error occurred while sending the file: {ex.Message}");
                             }
                         }
@@ -1573,18 +1559,12 @@ namespace APP
                             try
                             {
 
-                                //string ImageDataString = ImageToString(pictureBox.Image);
-
-
                                 StreamWriter writer = new StreamWriter(client.GetStream());
                                 string imageData = ImageToBase64String(se.image);
-                                //buffer = ImageToByteArray(pictureBox.Image);
                                 writer.AutoFlush = true;
                                 writer.WriteLine("Image");
                                 writer.WriteLine(username + "|" + ContactNameConversation.Text);
-                                //writer.WriteLine(Path.GetFileName(ofd.FileName));
 
-                                //writer.WriteLine(ImageDataString);
                                 writer.WriteLine(imageData);
 
 
@@ -1630,8 +1610,6 @@ namespace APP
 
                         //writer.WriteLine(ImageDataString);
                         writer.WriteLine(Location);
-
-
                     }
                     catch (Exception ex)
                     {
@@ -1676,18 +1654,12 @@ namespace APP
                 {
                     try
                     {
-
-                        //string ImageDataString = ImageToString(pictureBox.Image);
-
-
                         StreamWriter writer = new StreamWriter(client.GetStream());
                         
                         
                         writer.AutoFlush = true;
                         writer.WriteLine("INCOMINGCALL");
                         writer.WriteLine(username + "|" + ContactNameConversation.Text);
-                        
-                        
                         Seform = new CallWaitSe(talkWith, client, writer, reader,username);
                         Seform.Show();
 

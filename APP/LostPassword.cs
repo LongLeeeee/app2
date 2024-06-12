@@ -184,5 +184,13 @@ namespace APP
         {
 
         }
+
+        private void LostPassword_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Invoke(new Action(() =>
+            {
+                this.Hide();
+            }));
+        }
     }
 }

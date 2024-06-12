@@ -47,10 +47,10 @@
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.lblPasscheck = new System.Windows.Forms.Label();
             this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuTextBox3 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuTextBox2 = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.lblPasscheck = new System.Windows.Forms.Label();
             this.bunifuPanel1.SuspendLayout();
             this.bunifuPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -256,6 +256,16 @@
             this.bunifuPanel2.Size = new System.Drawing.Size(570, 218);
             this.bunifuPanel2.TabIndex = 1;
             this.bunifuPanel2.Click += new System.EventHandler(this.bunifuPanel2_Click);
+            // 
+            // lblPasscheck
+            // 
+            this.lblPasscheck.AutoSize = true;
+            this.lblPasscheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPasscheck.Location = new System.Drawing.Point(156, 74);
+            this.lblPasscheck.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPasscheck.Name = "lblPasscheck";
+            this.lblPasscheck.Size = new System.Drawing.Size(0, 15);
+            this.lblPasscheck.TabIndex = 5;
             // 
             // bunifuButton2
             // 
@@ -498,16 +508,6 @@
             this.bunifuTextBox2.WordWrap = true;
             this.bunifuTextBox2.TextChanged += new System.EventHandler(this.bunifuTextBox2_TextChanged);
             // 
-            // lblPasscheck
-            // 
-            this.lblPasscheck.AutoSize = true;
-            this.lblPasscheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPasscheck.Location = new System.Drawing.Point(156, 74);
-            this.lblPasscheck.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblPasscheck.Name = "lblPasscheck";
-            this.lblPasscheck.Size = new System.Drawing.Size(0, 15);
-            this.lblPasscheck.TabIndex = 5;
-            // 
             // LostPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -521,6 +521,7 @@
             this.MinimizeBox = false;
             this.Name = "LostPassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LostPassword_FormClosing);
             this.Load += new System.EventHandler(this.LostPassword_Load);
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel2.ResumeLayout(false);

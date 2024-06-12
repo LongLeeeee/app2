@@ -56,6 +56,10 @@ namespace APP
         }
         private void baoloi()
         {
+            bunifuTextBox1.Clear();
+            bunifuTextBox2.Clear();
+            bunifuTextBox3.Clear();
+            bunifuTextBox4.Clear();
             label7.Visible = true;
         }
 
@@ -116,10 +120,7 @@ namespace APP
                 Invoke(new Action(() =>
                 {
                     MessageBox.Show("Đăng ký không thành công");
-                    bunifuTextBox1.Clear();
-                    bunifuTextBox2.Clear();
-                    bunifuTextBox3.Clear();
-                    bunifuTextBox4.Clear();
+                    
                 }));
             }
         }
@@ -202,16 +203,21 @@ namespace APP
                 || (bunifuTextBox2.Text != bunifuTextBox4.Text))
             {
                 baoloi();
-                bunifuTextBox1.Clear();
-                bunifuTextBox2.Clear();
-                bunifuTextBox3.Clear();
-                bunifuTextBox4.Clear();
                 return;
             }
             // tạo thread để giao tiếp với server
             Thread threadSignin = new Thread(Register);
             threadSignin.Start();
             threadSignin.IsBackground = true;
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            if (tcpClient != null)
+            {
+                tcpClient.Close();
+            }
+            Application.Exit();
         }
     }
 }

@@ -34,6 +34,8 @@ namespace APP
         StreamReader reader;
         private void Baoloi()
         {
+            bunifuTextBox2.Clear();
+            bunifuTextBox1.Clear();
             label7.Visible = true;
         }
         private void ConnectToServer()
@@ -70,7 +72,10 @@ namespace APP
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            tcpClient.Close();
+            if (tcpClient != null)
+            {
+                tcpClient.Close();
+            }
             Application.Exit();
         }
 
@@ -84,8 +89,6 @@ namespace APP
             if (bunifuTextBox2.Text == "" || bunifuTextBox2.Text == "")
             {
                 Baoloi();
-                bunifuTextBox2.Clear();
-                bunifuTextBox1.Clear();
                 return;
             }
             // tạo thread để gửi và nhận thông tin đăng nhập
@@ -98,6 +101,10 @@ namespace APP
         private void Login()
         {
             ConnectToServer();
+            if (!tcpClient.Connected)
+            {
+                return;
+            }
             Data login = new Data()
             {
                 email = bunifuTextBox1.Text,
@@ -129,8 +136,6 @@ namespace APP
                 Invoke(new Action(() =>
                 {
                     Baoloi();
-                    bunifuTextBox1.Clear();
-                    bunifuTextBox2.Clear();
                 }));
             }
         }
@@ -152,6 +157,11 @@ namespace APP
 
         private void bunifuLabel1_Click_1(object sender, EventArgs e)
         {
+            ConnectToServer();
+            if (!tcpClient.Connected)
+            {
+                return;
+            }
             if (!string.IsNullOrEmpty(bunifuTextBox1.Text))
             {
                 Thread forgotThread = new Thread(ForgotPass);
@@ -182,7 +192,7 @@ namespace APP
                 {
                     LostPassword form = new LostPassword(userName, user.email, writer, reader);
                     form.ShowDialog();
-                    this.Hide();
+                    //this.Hide();
                 }));
             }
             else
