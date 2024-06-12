@@ -82,7 +82,22 @@ namespace APP
             reddd.Visible = false ;
             email = Email;
             Callpanel.Visible = false;
-            bunifuPanel5.Visible = false;
+            display(false);
+            PictureBox pic = new PictureBox();
+            Image image = Image.FromFile("Resources\\logo.png");
+            pic.Image = image;
+            pic.SizeMode = PictureBoxSizeMode.Zoom;
+            pic.Dock = DockStyle.Fill;
+            pic.Visible = true;
+            panel2.Controls.Add(pic);
+        }
+        private void display(bool b)
+        {
+            bunifuPictureBox4.Visible = b;
+            ContactNameConversation.Visible = b;
+            bunifuImageButton18.Visible = b;
+            bunifuImageButton2.Visible = b;
+            bunifuPanel14.Visible = b;
         }
         
         private void LoadData()
@@ -483,7 +498,7 @@ namespace APP
         }
         private void click_show_panel(object sender, EventArgs e)
         {
-            bunifuPanel5.Visible = true;
+            display(true);
             //bắt sự kiện xem chatlistuser nào được ấn
             ChatlistUser clickedChatListUser = (ChatlistUser)sender;    
             if (chatListUserToFlowLayoutPanelMap.ContainsKey(clickedChatListUser))
