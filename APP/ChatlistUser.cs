@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,10 +19,23 @@ namespace APP
             InitializeComponent();
         }
         private string _username;
+        private string _name1;
         private Image _userimage;
         public BunifuLabel getLabel()
         {
-            return bunifuLabel3;
+            return bunifuLabel1;
+        }
+        public string name1
+        {
+            get
+            {
+                return _name1;
+            }
+            set
+            {
+                _name1 = value;
+                name.Text = value;
+            }
         }
         public string username
         {
@@ -32,7 +46,7 @@ namespace APP
             set
             {
                 _username = value;
-                Name.Text = value;
+                usrn.Text = value;
             }
         }
         public Image userimage
@@ -49,6 +63,11 @@ namespace APP
         }
 
         private void MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void bunifuLabel1_Click(object sender, EventArgs e)
         {
 
         }

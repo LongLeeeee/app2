@@ -31,7 +31,7 @@ namespace APP
         private Thread receiveThread;
         private TcpClient client;
         private string username, email, name;
-        private ChatlistUser[] chatlistUsers;
+        private ChatlistUser[] chatlistUsers = new ChatlistUser[100];
         private UserFriend[] listFriends;
         private string[] notiList;
         private StreamReader reader;
@@ -60,7 +60,8 @@ namespace APP
         private System.Windows.Forms.Timer timer;
         private DateTime startTime;
         bool isCall = false;
-        
+        PictureBox logo;
+
         public Chat(TcpClient tcpClient, string username, string Email)
         {
             waveIn = new WaveIn();
@@ -82,17 +83,26 @@ namespace APP
             reddd.Visible = false ;
             email = Email;
             Callpanel.Visible = false;
+            logo = new PictureBox();
+            Image image = Image.FromFile("Resources\\Logo2.png");
+            logo.Image = image;
+            logo.SizeMode = PictureBoxSizeMode.CenterImage;
+            logo.Dock = DockStyle.Fill;
+            panel2.Controls.Add(logo);
+            display(false);
+        }
+        private void display(bool b)
+        {
+            logo.Visible = !b;
+            bunifuPictureBox4.Visible = b;
+            ContactNameConversation.Visible = b;
+            bunifuImageButton18.Visible = b;
+            bunifuImageButton2.Visible = b;
+            bunifuPanel14.Visible = b;
         }
         
         private void LoadData()
         {
-
-
-            
-
-
-
-
             reader = new StreamReader(client.GetStream());
             writer = new StreamWriter(client.GetStream());
             writer.AutoFlush = true;
@@ -138,30 +148,38 @@ namespace APP
                 {
                     chatRoomList.Add(item);
                 }
-                chatlistUsers = new ChatlistUser[groupList.Length];
-                for (int i = 0; i < chatlistUsers.Length; i++)
+                ChatlistUser[] chatlistUsers1 = new ChatlistUser[groupList.Length];
+                for (int i = 0; i < groupList.Length; i++)
                 {
                     if (groupList[i] != "")
                     {
                         Invoke(new Action(() =>
                         {
-                            chatlistUsers[i] = new ChatlistUser();
+                            chatlistUsers1[i] = new ChatlistUser();
                             Image image = Image.FromFile("Resources\\avata.jpg");
                             // tạo ra 1 chatlistuser
-                            chatlistUsers[i].username = groupList[i];
-                            chatlistUsers[i].userimage = image;
+                            chatlistUsers1[i].username = groupList[i];
+                            chatlistUsers1[i].userimage = image;
+                            //chatlistUsers1[i].BorderStyle = BorderStyle.FixedSingle;
                             // tạo ra 1 flowlayoutpanel tương ứng với chatlistuser ở trên
                             FlowLayoutPanel tempFlowLayoutPanel = createFlowlayoutPanel();
                             //getRoomKey(groupList[i]);
-                            keyValuePairs.Add(chatlistUsers[i], getRoomKey(groupList[i]));
-                            chatListUserToFlowLayoutPanelMap.Add(chatlistUsers[i], tempFlowLayoutPanel);
+                            keyValuePairs.Add(chatlistUsers1[i], getRoomKey(groupList[i]));
+                            chatListUserToFlowLayoutPanelMap.Add(chatlistUsers1[i], tempFlowLayoutPanel);
                             // gán sự kiện hiển thị flowlayoutpanel khi ấn vào chatlistuser tương ứng
-                            chatlistUsers[i].MouseDown += click_show_panel;
+                            chatlistUsers1[i].MouseDown += click_show_panel;
                             ContactNameConversation.Text = "Unknow";
                             //ContactNameMore.Text = "Unknow";
                             // thêm chatlistuser vào panel bên trái 
-                            ChatlistFlowPanel.Controls.Add(chatlistUsers[i]);
+                            ChatlistFlowPanel.Controls.Add(chatlistUsers1[i]);
                         }));
+                    }
+                    int m = friendList.Length;
+                    foreach (var item in chatlistUsers1)
+                    {
+                        chatlistUsers[m] = new ChatlistUser();
+                        chatlistUsers[m] = item;
+                        m++;
                     }
                 }
 
@@ -375,7 +393,7 @@ namespace APP
                 Chatlist.Visible = true;
                 listFriend.Visible = false;
                 Detail.Visible = false;
-                add.BackColor = Color.WhiteSmoke;
+                bunifuImageButton4.BackColor = Color.WhiteSmoke;
                 conversation.BackColor= Color.LightGray;
             }
             else
@@ -418,6 +436,7 @@ namespace APP
                                 listFriends[i].userimage = image;
                                 listFriends[i].username = userList[i];
                                 keyValuePairs2.Add(userList[i], listFriends[i]);
+                            
                                 if (flowLayoutPanelListfriend.Controls.Count < 0)
                                 {
                                     flowLayoutPanelListfriend.Controls.Clear();
@@ -462,8 +481,7 @@ namespace APP
         {
             if (friendList != null)
             {
-                chatlistUsers = new ChatlistUser[friendList.Length];
-                for (int i = 0; i < chatlistUsers.Length; i++)
+                for (int i = 0; i < friendList.Length; i++)
                 {
                     if (friendList[i] != "")
                     {
@@ -472,6 +490,7 @@ namespace APP
                         // tạo ra 1 chatlistuser
                         chatlistUsers[i].username = friendList[i];
                         chatlistUsers[i].userimage = image;
+                        //chatlistUsers[i].BorderStyle = BorderStyle.FixedSingle;
                         // tạo ra 1 flowlayoutpanel tương ứng với chatlistuser ở trên
                         FlowLayoutPanel tempFlowLayoutPanel = createFlowlayoutPanel();
                         getRoomKey(username, friendList[i]);
@@ -489,6 +508,7 @@ namespace APP
         }
         private void click_show_panel(object sender, EventArgs e)
         {
+            display(true);
             //bắt sự kiện xem chatlistuser nào được ấn
             ChatlistUser clickedChatListUser = (ChatlistUser)sender;    
             if (chatListUserToFlowLayoutPanelMap.ContainsKey(clickedChatListUser))
@@ -507,7 +527,7 @@ namespace APP
                         
                         if(clickedChatListUser.username == ContactNameConversation.Text)
                         {
-                            clickedChatListUser.BackColor = Color.WhiteSmoke;
+                            clickedChatListUser.BackColor = Color.FromArgb(235, 245, 255);
                         }
                     }
                     else 
@@ -537,24 +557,14 @@ namespace APP
         }
         private void add_Click(object sender, EventArgs e)
         {
-            if (listFriend.Visible == false || Detail.Visible == true)
-            {
-                Detail.Visible = false;
-                Chatlist.Visible = false;
-                listFriend.Visible = true;
-                add.BackColor = Color.LightGray;
-                conversation.BackColor = Color.WhiteSmoke;
-                reddd.Visible = false;
 
-            }
-            else if (listFriend.Visible == true)
-            {
-                listFriend.Visible = false;
-               add.BackColor = Color.WhiteSmoke;
-            }
+            AddGroup form = new AddGroup(friendList, writer, username);
+
+            form.ShowDialog();
+
 
         }
-        
+
         private void More_Click(object sender, EventArgs e)
         {
             
@@ -850,12 +860,6 @@ namespace APP
                     }
                     else if (messageFromServer == "AcceptedSuccessfullyForReceiver")
                     {
-
-
-
-
-
-
                         string userName = reader.ReadLine();
                         Invoke(new Action(() =>
                         {
@@ -863,9 +867,10 @@ namespace APP
                             Image image = Image.FromFile("Resources\\avata.jpg");
                             // tạo ra 1 chatlistuser
                             temp.username = userName;
-
-
-
+                            if (friendList == null)
+                            {
+                                friendList = new string[friendList.Length + 1];
+                            }
                             string[] newFriendList = new string[friendList.Length + 1];
                             for (int i = 0; i < friendList.Length; i++)
                             {
@@ -873,10 +878,6 @@ namespace APP
                             }
                             newFriendList[friendList.Length] = userName;
                             friendList = newFriendList;
-
-
-
-
                             temp.userimage = image;
                             // tạo ra 1 flowlayoutpanel tương ứng với chatlistuser ở trên
                             FlowLayoutPanel tempFlowLayoutPanel = createFlowlayoutPanel();
@@ -906,6 +907,10 @@ namespace APP
                             Image image = Image.FromFile("Resources\\avata.jpg");
                             // tạo ra 1 chatlistuser
                             temp.username = userName;
+                            if (friendList == null)
+                            {
+                                friendList = new string[friendList.Length + 1];
+                            }
                             string[] newFriendList = new string[friendList.Length + 1];
                             for (int i = 0; i < friendList.Length; i++)
                             {
@@ -914,6 +919,7 @@ namespace APP
                             newFriendList[friendList.Length] = userName;
                             friendList = newFriendList;
                             temp.userimage = image;
+                            temp.BorderStyle = BorderStyle.FixedSingle;
                             // tạo ra 1 flowlayoutpanel tương ứng với chatlistuser ở trên
                             FlowLayoutPanel tempFlowLayoutPanel = createFlowlayoutPanel();
                             getRoomKey(username, userName);
@@ -947,6 +953,8 @@ namespace APP
                             // tạo ra 1 chatlistuser
                             temp.username = groupName;
                             temp.userimage = image;
+                            temp.BorderStyle = BorderStyle.FixedSingle;
+
                             // tạo ra 1 flowlayoutpanel tương ứng với chatlistuser ở trên
                             FlowLayoutPanel tempFlowLayoutPanel = createFlowlayoutPanel();
                             getRoomKey(groupName);
@@ -1245,8 +1253,6 @@ namespace APP
         }
 
         private void bunifuImageButton1_Click_1(object sender, EventArgs e)
-
-
         {
             string searchText = bunifuTextBox2.Text;
 
@@ -1267,7 +1273,7 @@ namespace APP
                 {
                     if (item != null)
                     {
-                        if (item.username.IndexOf(searchText, StringComparison.OrdinalIgnoreCase) != -1)
+                        if (item.username.Contains(searchText))
                         {
                             item.Visible = true;
                             foundResult = true; // Kết quả được tìm thấy
@@ -1410,8 +1416,6 @@ namespace APP
         }
         private void bunifuImageButton6_Click(object sender, EventArgs e)
         {
-
-
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
@@ -1431,13 +1435,8 @@ namespace APP
                                 sef.filename = fileName;
                                 Invoke(new Action(() =>
                                 {
-
                                     item.Value.Controls.Add(sef);
                                 }));
-                                // Get the network stream from the client
-
-
-                                // Create a StreamWriter to write metadata to the network stream
                                 StreamWriter writer = new StreamWriter(client.GetStream());
                                 
                                     writer.AutoFlush = true;
@@ -1450,7 +1449,6 @@ namespace APP
                                     int bytesRead;
                                     NetworkStream stream = client.GetStream();
 
-                                // Open the file and send its content using BinaryWriter
                                 using (FileStream fileStream = new FileStream(filePath, FileMode.Open, FileAccess.Read))
                                 { 
                                
@@ -1462,7 +1460,6 @@ namespace APP
                             }
                             catch (Exception ex)
                             {
-                                // Handle or log the exception
                                 MessageBox.Show($"An error occurred while sending the file: {ex.Message}");
                             }
                         }
@@ -1495,12 +1492,26 @@ namespace APP
         private void bunifuImageButton4_Click(object sender, EventArgs e)
         {
 
-            AddGroup form = new AddGroup(friendList, writer, username);
 
-           
+            if (listFriend.Visible == false || Detail.Visible == true)
+            {
+                Detail.Visible = false;
+                Chatlist.Visible = false;
+                listFriend.Visible = true;
+                bunifuImageButton4.BackColor = Color.LightGray;
+                conversation.BackColor = Color.WhiteSmoke;
+                reddd.Visible = false;
 
-            form.ShowDialog();
-            
+            }
+            else if (listFriend.Visible == true)
+            {
+                listFriend.Visible = false;
+                bunifuImageButton4.BackColor = Color.WhiteSmoke;
+            }
+
+
+
+
 
 
         }
@@ -1573,18 +1584,12 @@ namespace APP
                             try
                             {
 
-                                //string ImageDataString = ImageToString(pictureBox.Image);
-
-
                                 StreamWriter writer = new StreamWriter(client.GetStream());
                                 string imageData = ImageToBase64String(se.image);
-                                //buffer = ImageToByteArray(pictureBox.Image);
                                 writer.AutoFlush = true;
                                 writer.WriteLine("Image");
                                 writer.WriteLine(username + "|" + ContactNameConversation.Text);
-                                //writer.WriteLine(Path.GetFileName(ofd.FileName));
 
-                                //writer.WriteLine(ImageDataString);
                                 writer.WriteLine(imageData);
 
 
@@ -1630,8 +1635,6 @@ namespace APP
 
                         //writer.WriteLine(ImageDataString);
                         writer.WriteLine(Location);
-
-
                     }
                     catch (Exception ex)
                     {
@@ -1660,7 +1663,10 @@ namespace APP
 
         }
 
-        
+        private void flowLayoutPanelListfriend_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
 
         private void btn_changepass_Click(object sender, EventArgs e)
         {
@@ -1676,18 +1682,12 @@ namespace APP
                 {
                     try
                     {
-
-                        //string ImageDataString = ImageToString(pictureBox.Image);
-
-
                         StreamWriter writer = new StreamWriter(client.GetStream());
                         
                         
                         writer.AutoFlush = true;
                         writer.WriteLine("INCOMINGCALL");
                         writer.WriteLine(username + "|" + ContactNameConversation.Text);
-                        
-                        
                         Seform = new CallWaitSe(talkWith, client, writer, reader,username);
                         Seform.Show();
 

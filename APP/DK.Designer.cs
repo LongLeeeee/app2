@@ -64,7 +64,7 @@
             this.bunifuTextBox5 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuTextBox2 = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.exit = new System.Windows.Forms.PictureBox();
             this.bunifuTextBox4 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuTextBox3 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -73,7 +73,7 @@
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exit)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
@@ -613,16 +613,16 @@
             this.bunifuTextBox2.UseSystemPasswordChar = true;
             this.bunifuTextBox2.WordWrap = true;
             // 
-            // pictureBox1
+            // exit
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(805, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(38, 26);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.exit.Image = ((System.Drawing.Image)(resources.GetObject("exit.Image")));
+            this.exit.Location = new System.Drawing.Point(805, 6);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(38, 26);
+            this.exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.exit.TabIndex = 15;
+            this.exit.TabStop = false;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // bunifuTextBox4
             // 
@@ -931,7 +931,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.bunifuButton2);
             this.Controls.Add(this.bunifuTextBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.exit);
             this.Controls.Add(this.bunifuTextBox4);
             this.Controls.Add(this.bunifuTextBox3);
             this.Controls.Add(this.bunifuTextBox1);
@@ -944,7 +944,7 @@
             this.Load += new System.EventHandler(this.DK_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -960,7 +960,7 @@
         private System.Windows.Forms.Label label4;
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox3;
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox4;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox exit;
         private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
         private System.Windows.Forms.Label lblPasswordError;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton3;

@@ -51,15 +51,17 @@ namespace APP
             {
                 if (resetCode.CompareTo(bunifuTextBox1.Text) == 0)
                 {
+                    bunifuTextBox1.Clear();
+                    label1.Text = null;
                     bunifuPanel2.Visible = true;
                 }
                 else
                 {
-                    MessageBox.Show("Mã đặt lại mật khẩu của bạn không chính xác");
-                    bunifuTextBox1.Clear();
+                    label1.Text = "Mã đặt lại mật khẩu của bạn không chính xác";
                 }
             }
-            else MessageBox.Show("Vui lòng điền mã!");
+            else
+            label1.Text = "Vui lòng điền mã!";
         }
 
         private void LostPassword_Load(object sender, EventArgs e)
@@ -106,12 +108,12 @@ namespace APP
                 }
                 else
                 {
-                    MessageBox.Show("mật khẩu xác nhận không chính xác!");
+                    lblPasscheck.Text = "mật khẩu xác nhận không chính xác!";
                 }
             }
             else
             {
-                MessageBox.Show("Vui lòng điền mật khẩu mới");
+                lblPasscheck.Text = "Vui lòng điền mật khẩu mới";
             }
         }
         private void resetPassword()
@@ -183,6 +185,14 @@ namespace APP
         private void bunifuPanel2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void LostPassword_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Invoke(new Action(() =>
+            {
+                this.Hide();
+            }));
         }
     }
 }

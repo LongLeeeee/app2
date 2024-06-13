@@ -44,13 +44,16 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lblPasscheck = new System.Windows.Forms.Label();
             this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuTextBox3 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuTextBox2 = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.lblPasscheck = new System.Windows.Forms.Label();
             this.bunifuPanel1.SuspendLayout();
             this.bunifuPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -63,6 +66,7 @@
             this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel1.BorderRadius = 3;
             this.bunifuPanel1.BorderThickness = 1;
+            this.bunifuPanel1.Controls.Add(this.label1);
             this.bunifuPanel1.Controls.Add(this.bunifuButton1);
             this.bunifuPanel1.Controls.Add(this.bunifuTextBox1);
             this.bunifuPanel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -71,6 +75,17 @@
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(570, 116);
             this.bunifuPanel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(63, 83);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 15);
+            this.label1.TabIndex = 6;
             // 
             // bunifuButton1
             // 
@@ -216,7 +231,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.DimGray;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBox1.OnIdleState = stateProperties4;
-            this.bunifuTextBox1.Padding = new System.Windows.Forms.Padding(3);
+            this.bunifuTextBox1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.bunifuTextBox1.PasswordChar = '\0';
             this.bunifuTextBox1.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.bunifuTextBox1.PlaceholderText = "Nhập mã xác nhận";
@@ -245,6 +260,8 @@
             this.bunifuPanel2.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel2.BorderRadius = 3;
             this.bunifuPanel2.BorderThickness = 1;
+            this.bunifuPanel2.Controls.Add(this.bunifuLabel2);
+            this.bunifuPanel2.Controls.Add(this.bunifuLabel1);
             this.bunifuPanel2.Controls.Add(this.lblPasscheck);
             this.bunifuPanel2.Controls.Add(this.bunifuButton2);
             this.bunifuPanel2.Controls.Add(this.bunifuTextBox3);
@@ -256,6 +273,50 @@
             this.bunifuPanel2.Size = new System.Drawing.Size(570, 218);
             this.bunifuPanel2.TabIndex = 1;
             this.bunifuPanel2.Click += new System.EventHandler(this.bunifuPanel2_Click);
+            // 
+            // bunifuLabel2
+            // 
+            this.bunifuLabel2.AllowParentOverrides = false;
+            this.bunifuLabel2.AutoEllipsis = false;
+            this.bunifuLabel2.CursorType = null;
+            this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel2.ForeColor = System.Drawing.Color.DimGray;
+            this.bunifuLabel2.Location = new System.Drawing.Point(153, 81);
+            this.bunifuLabel2.Name = "bunifuLabel2";
+            this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel2.Size = new System.Drawing.Size(139, 17);
+            this.bunifuLabel2.TabIndex = 6;
+            this.bunifuLabel2.Text = "Nhập lại mật khẩu mới";
+            this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel1
+            // 
+            this.bunifuLabel1.AllowParentOverrides = false;
+            this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel1.ForeColor = System.Drawing.Color.DimGray;
+            this.bunifuLabel1.Location = new System.Drawing.Point(155, 16);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(122, 17);
+            this.bunifuLabel1.TabIndex = 6;
+            this.bunifuLabel1.Text = "Nhập mật khẩu mới";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // lblPasscheck
+            // 
+            this.lblPasscheck.AutoSize = true;
+            this.lblPasscheck.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPasscheck.ForeColor = System.Drawing.Color.Red;
+            this.lblPasscheck.Location = new System.Drawing.Point(159, 150);
+            this.lblPasscheck.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPasscheck.Name = "lblPasscheck";
+            this.lblPasscheck.Size = new System.Drawing.Size(0, 15);
+            this.lblPasscheck.TabIndex = 5;
             // 
             // bunifuButton2
             // 
@@ -304,7 +365,7 @@
             this.bunifuButton2.IdleIconLeftImage = null;
             this.bunifuButton2.IdleIconRightImage = null;
             this.bunifuButton2.IndicateFocus = false;
-            this.bunifuButton2.Location = new System.Drawing.Point(209, 148);
+            this.bunifuButton2.Location = new System.Drawing.Point(209, 171);
             this.bunifuButton2.Name = "bunifuButton2";
             this.bunifuButton2.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton2.OnDisabledState.BorderRadius = 35;
@@ -375,7 +436,7 @@
             this.bunifuTextBox3.IconRight = null;
             this.bunifuTextBox3.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox3.Lines = new string[0];
-            this.bunifuTextBox3.Location = new System.Drawing.Point(154, 96);
+            this.bunifuTextBox3.Location = new System.Drawing.Point(153, 103);
             this.bunifuTextBox3.MaxLength = 32767;
             this.bunifuTextBox3.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBox3.Modified = false;
@@ -401,10 +462,10 @@
             stateProperties8.ForeColor = System.Drawing.Color.DimGray;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBox3.OnIdleState = stateProperties8;
-            this.bunifuTextBox3.Padding = new System.Windows.Forms.Padding(3);
-            this.bunifuTextBox3.PasswordChar = '\0';
+            this.bunifuTextBox3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.bunifuTextBox3.PasswordChar = '●';
             this.bunifuTextBox3.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.bunifuTextBox3.PlaceholderText = "Nhập lại mật khẩu";
+            this.bunifuTextBox3.PlaceholderText = "";
             this.bunifuTextBox3.ReadOnly = false;
             this.bunifuTextBox3.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.bunifuTextBox3.SelectedText = "";
@@ -418,8 +479,8 @@
             this.bunifuTextBox3.TextMarginBottom = 0;
             this.bunifuTextBox3.TextMarginLeft = 3;
             this.bunifuTextBox3.TextMarginTop = 0;
-            this.bunifuTextBox3.TextPlaceholder = "Nhập lại mật khẩu";
-            this.bunifuTextBox3.UseSystemPasswordChar = false;
+            this.bunifuTextBox3.TextPlaceholder = "";
+            this.bunifuTextBox3.UseSystemPasswordChar = true;
             this.bunifuTextBox3.WordWrap = true;
             // 
             // bunifuTextBox2
@@ -450,7 +511,7 @@
             this.bunifuTextBox2.IconRight = null;
             this.bunifuTextBox2.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox2.Lines = new string[0];
-            this.bunifuTextBox2.Location = new System.Drawing.Point(154, 30);
+            this.bunifuTextBox2.Location = new System.Drawing.Point(154, 38);
             this.bunifuTextBox2.MaxLength = 32767;
             this.bunifuTextBox2.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBox2.Modified = false;
@@ -476,10 +537,10 @@
             stateProperties12.ForeColor = System.Drawing.Color.Gray;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBox2.OnIdleState = stateProperties12;
-            this.bunifuTextBox2.Padding = new System.Windows.Forms.Padding(3);
-            this.bunifuTextBox2.PasswordChar = '\0';
+            this.bunifuTextBox2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.bunifuTextBox2.PasswordChar = '●';
             this.bunifuTextBox2.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.bunifuTextBox2.PlaceholderText = "Mật khẩu mới";
+            this.bunifuTextBox2.PlaceholderText = "";
             this.bunifuTextBox2.ReadOnly = false;
             this.bunifuTextBox2.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.bunifuTextBox2.SelectedText = "";
@@ -493,20 +554,10 @@
             this.bunifuTextBox2.TextMarginBottom = 0;
             this.bunifuTextBox2.TextMarginLeft = 3;
             this.bunifuTextBox2.TextMarginTop = 0;
-            this.bunifuTextBox2.TextPlaceholder = "Mật khẩu mới";
-            this.bunifuTextBox2.UseSystemPasswordChar = false;
+            this.bunifuTextBox2.TextPlaceholder = "";
+            this.bunifuTextBox2.UseSystemPasswordChar = true;
             this.bunifuTextBox2.WordWrap = true;
             this.bunifuTextBox2.TextChanged += new System.EventHandler(this.bunifuTextBox2_TextChanged);
-            // 
-            // lblPasscheck
-            // 
-            this.lblPasscheck.AutoSize = true;
-            this.lblPasscheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPasscheck.Location = new System.Drawing.Point(156, 74);
-            this.lblPasscheck.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblPasscheck.Name = "lblPasscheck";
-            this.lblPasscheck.Size = new System.Drawing.Size(0, 15);
-            this.lblPasscheck.TabIndex = 5;
             // 
             // LostPassword
             // 
@@ -521,8 +572,10 @@
             this.MinimizeBox = false;
             this.Name = "LostPassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LostPassword_FormClosing);
             this.Load += new System.EventHandler(this.LostPassword_Load);
             this.bunifuPanel1.ResumeLayout(false);
+            this.bunifuPanel1.PerformLayout();
             this.bunifuPanel2.ResumeLayout(false);
             this.bunifuPanel2.PerformLayout();
             this.ResumeLayout(false);
@@ -539,5 +592,8 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton2;
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox3;
         private System.Windows.Forms.Label lblPasscheck;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
+        private System.Windows.Forms.Label label1;
     }
 }
