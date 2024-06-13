@@ -210,6 +210,12 @@
     <Compile Include="LogIn.Designer.cs">
       <DependentUpon>LogIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="LogoDes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LogoDes.Designer.cs">
+      <DependentUpon>LogoDes.cs</DependentUpon>
+    </Compile>
     <Compile Include="LostPassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -311,6 +317,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogoDes.resx">
+      <DependentUpon>LogoDes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LostPassword.resx">
       <DependentUpon>LostPassword.cs</DependentUpon>

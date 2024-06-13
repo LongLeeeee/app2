@@ -564,3 +564,4 @@ E:\Thử\app2\APP\obj\Debug\APP.CallWaitSe.resources
 E:\Thử\app2\APP\obj\Debug\APP.ReIcon.resources
 E:\Thử\app2\APP\obj\Debug\APP.SeIcon.resources
 E:\Thử\app2\APP\obj\Debug\APP.UserControl1.resources
+E:\Thử\app2\APP\obj\Debug\APP.LogoDes.resources

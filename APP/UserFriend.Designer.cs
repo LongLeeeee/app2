@@ -30,47 +30,34 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserFriend));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            this.PictureBox = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.Name = new Bunifu.UI.WinForms.BunifuLabel();
+            this.Name2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.PictureBox = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.NameUser = new Bunifu.UI.WinForms.BunifuLabel();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // PictureBox
+            // Name2
             // 
-            this.PictureBox.AllowFocused = false;
-            this.PictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.PictureBox.AutoSizeHeight = true;
-            this.PictureBox.BorderRadius = 32;
-            this.PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox.Image")));
-            this.PictureBox.IsCircle = true;
-            this.PictureBox.Location = new System.Drawing.Point(7, 8);
-            this.PictureBox.Name = "PictureBox";
-            this.PictureBox.Size = new System.Drawing.Size(64, 64);
-            this.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox.TabIndex = 0;
-            this.PictureBox.TabStop = false;
-            this.PictureBox.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            // 
-            // Name
-            // 
-            this.Name.AllowParentOverrides = false;
-            this.Name.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Name2.AllowParentOverrides = false;
+            this.Name2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Name.AutoEllipsis = false;
-            this.Name.AutoSize = false;
-            this.Name.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Name.CursorType = System.Windows.Forms.Cursors.Default;
-            this.Name.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name.Location = new System.Drawing.Point(78, 18);
-            this.Name.Name = "Name";
-            this.Name.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Name.Size = new System.Drawing.Size(187, 16);
-            this.Name.TabIndex = 1;
-            this.Name.Text = "bunifuLabel1";
-            this.Name.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.Name.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.Name2.AutoEllipsis = false;
+            this.Name2.AutoSize = false;
+            this.Name2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Name2.CursorType = System.Windows.Forms.Cursors.Default;
+            this.Name2.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.Name2.ForeColor = System.Drawing.Color.DimGray;
+            this.Name2.Location = new System.Drawing.Point(86, 45);
+            this.Name2.Name = "Name2";
+            this.Name2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Name2.Size = new System.Drawing.Size(187, 16);
+            this.Name2.TabIndex = 1;
+            this.Name2.Text = "bunifuLabel1";
+            this.Name2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.Name2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.Name2.Click += new System.EventHandler(this.Name2_Click);
             // 
             // bunifuButton1
             // 
@@ -119,7 +106,7 @@
             this.bunifuButton1.IdleIconLeftImage = null;
             this.bunifuButton1.IdleIconRightImage = null;
             this.bunifuButton1.IndicateFocus = false;
-            this.bunifuButton1.Location = new System.Drawing.Point(77, 42);
+            this.bunifuButton1.Location = new System.Drawing.Point(191, 28);
             this.bunifuButton1.Name = "bunifuButton1";
             this.bunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.OnDisabledState.BorderRadius = 20;
@@ -162,24 +149,63 @@
             this.bunifuButton1.UseDefaultRadiusAndThickness = true;
             this.bunifuButton1.Click += new System.EventHandler(this.bunifuButton1_Click);
             // 
+            // PictureBox
+            // 
+            this.PictureBox.AllowFocused = false;
+            this.PictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PictureBox.AutoSizeHeight = true;
+            this.PictureBox.BorderRadius = 32;
+            this.PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox.Image")));
+            this.PictureBox.IsCircle = true;
+            this.PictureBox.Location = new System.Drawing.Point(7, 8);
+            this.PictureBox.Name = "PictureBox";
+            this.PictureBox.Size = new System.Drawing.Size(64, 64);
+            this.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PictureBox.TabIndex = 0;
+            this.PictureBox.TabStop = false;
+            this.PictureBox.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            // 
+            // NameUser
+            // 
+            this.NameUser.AllowParentOverrides = false;
+            this.NameUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.NameUser.AutoEllipsis = false;
+            this.NameUser.Cursor = System.Windows.Forms.Cursors.Default;
+            this.NameUser.CursorType = System.Windows.Forms.Cursors.Default;
+            this.NameUser.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.NameUser.Location = new System.Drawing.Point(86, 20);
+            this.NameUser.Name = "NameUser";
+            this.NameUser.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.NameUser.Size = new System.Drawing.Size(87, 20);
+            this.NameUser.TabIndex = 3;
+            this.NameUser.Text = "bunifuLabel1";
+            this.NameUser.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.NameUser.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // UserFriend
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.NameUser);
             this.Controls.Add(this.bunifuButton1);
-            this.Controls.Add(this.Name);
+            this.Controls.Add(this.Name2);
             this.Controls.Add(this.PictureBox);
-            
+            this.Name = "UserFriend";
             this.Size = new System.Drawing.Size(286, 82);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private Bunifu.UI.WinForms.BunifuPictureBox PictureBox;
-        private Bunifu.UI.WinForms.BunifuLabel Name;
+        private Bunifu.UI.WinForms.BunifuLabel Name2;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
+        private Bunifu.UI.WinForms.BunifuLabel NameUser;
     }
 }
