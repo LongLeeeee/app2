@@ -1,0 +1,569 @@
+E:\Dự án\Desktop app\APP\APP\bin\Debug\APP.exe.config
+E:\Dự án\Desktop app\APP\APP\bin\Debug\APP.exe
+E:\Dự án\Desktop app\APP\APP\bin\Debug\APP.pdb
+E:\Dự án\Desktop app\APP\APP\obj\Debug\APP.csproj.AssemblyReference.cache
+E:\Dự án\Desktop app\APP\APP\obj\Debug\APP.LogIn.resources
+E:\Dự án\Desktop app\APP\APP\obj\Debug\APP.Properties.Resources.resources
+E:\Dự án\Desktop app\APP\APP\obj\Debug\APP.csproj.GenerateResource.cache
+E:\Dự án\Desktop app\APP\APP\obj\Debug\APP.csproj.CoreCompileInputs.cache
+E:\Dự án\Desktop app\APP\APP\obj\Debug\APP.exe
+E:\Dự án\Desktop app\APP\APP\obj\Debug\APP.pdb
+E:\Dự án\Desktop app\APP\APP\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+E:\Dự án\Desktop app\APP\APP\obj\Debug\APP.exe.licenses
+E:\Dự án\Desktop app\APP\APP\obj\Debug\APP.csproj.Up2Date
+E:\Dự án\Desktop app\APP\APP\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\Guna.UI.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+E:\Dự án\Desktop app\APP\APP\obj\Debug\APP.DK.resources
+E:\Dự án\Desktop app\APP\APP\obj\Debug\APP.Chat.resources
+E:\Dự án\Desktop app\APP\APP\bin\Debug\Bunifu.UI.WinForms.BunifuPages.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.Data.v23.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.Data.v23.2.xml
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.BonusSkins.v18.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.CodeParser.v18.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.Data.v18.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.DataAccess.v18.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.DataAccess.v18.2.UI.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.DemoData.v18.2.Core.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.DemoData.v18.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.Diagram.v18.2.Core.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.Dialogs.v18.2.Core.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.Docs.v18.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.Images.v18.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.Office.v18.2.Core.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.Pdf.v18.2.Core.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.Pdf.v18.2.Drawing.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.PivotGrid.v18.2.Core.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.Printing.v18.2.Core.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.RichEdit.v18.2.Core.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.RichEdit.v18.2.Export.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.Utils.v18.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.Utils.v18.2.UI.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraBars.v18.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraCharts.v18.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraCharts.v18.2.Extensions.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraCharts.v18.2.UI.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraCharts.v18.2.Web.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraCharts.v18.2.Wizard.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraDiagram.v18.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraDialogs.v18.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraEditors.v18.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraGauges.v18.2.Core.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraGauges.v18.2.Presets.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraGauges.v18.2.Win.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraGrid.v18.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraLayout.v18.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraMap.v18.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraNavBar.v18.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraPdfViewer.v18.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraPivotGrid.v18.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraPrinting.v18.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraReports.v18.2.CodeCompletion.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraReports.v18.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraReports.v18.2.Extensions.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraReports.v18.2.Service.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraReports.v18.2.Web.Azure.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraReports.v18.2.Web.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraReports.v18.2.Web.WebForms.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraRichEdit.v18.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraRichEdit.v18.2.Extensions.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraScheduler.v18.2.Core.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraScheduler.v18.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraScheduler.v18.2.Extensions.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraScheduler.v18.2.GoogleCalendar.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraScheduler.v18.2.Reporting.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraScheduler.v18.2.Reporting.Extensions.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraSpellChecker.v18.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraSpreadsheet.v18.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraTreeList.v18.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraTreeMap.v18.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraVerticalGrid.v18.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\DevExpress.XtraWizard.v18.2.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.Data.v18.2.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.DataAccess.v18.2.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.DataAccess.v18.2.UI.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.Diagram.v18.2.Core.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.Office.v18.2.Core.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.Pdf.v18.2.Core.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.PivotGrid.v18.2.Core.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.Printing.v18.2.Core.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.RichEdit.v18.2.Core.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.Utils.v18.2.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.Utils.v18.2.UI.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.XtraBars.v18.2.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.XtraCharts.v18.2.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.XtraCharts.v18.2.Wizard.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.XtraEditors.v18.2.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.XtraGauges.v18.2.Core.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.XtraGauges.v18.2.Presets.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.XtraGrid.v18.2.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.XtraLayout.v18.2.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.XtraNavBar.v18.2.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.XtraPdfViewer.v18.2.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.XtraPivotGrid.v18.2.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.XtraPrinting.v18.2.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.XtraReports.v18.2.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.XtraReports.v18.2.Extensions.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.XtraReports.v18.2.Web.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.XtraRichEdit.v18.2.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.XtraRichEdit.v18.2.Extensions.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.XtraScheduler.v18.2.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.XtraScheduler.v18.2.Core.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.XtraScheduler.v18.2.Extensions.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.XtraScheduler.v18.2.Reporting.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.XtraSpellChecker.v18.2.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.XtraSpreadsheet.v18.2.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.XtraTreeList.v18.2.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.XtraVerticalGrid.v18.2.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\es\DevExpress.XtraWizard.v18.2.resources.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
+E:\Dự án\Desktop app\APP\APP\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
+E:\Dự án\Desktop app\APP\APP\obj\Debug\APP.UserFriend.resources
+E:\Dự án\Desktop app\APP\APP\obj\Debug\APP.ChatlistUser.resources
+C:\Users\LONG\Downloads\APP\APP\bin\Debug\APP.exe.config
+C:\Users\LONG\Downloads\APP\APP\bin\Debug\APP.exe
+C:\Users\LONG\Downloads\APP\APP\bin\Debug\APP.pdb
+C:\Users\LONG\Downloads\APP\APP\obj\Debug\APP.csproj.AssemblyReference.cache
+C:\Users\LONG\Downloads\APP\APP\obj\Debug\APP.Chat.resources
+C:\Users\LONG\Downloads\APP\APP\obj\Debug\APP.ChatlistUser.resources
+C:\Users\LONG\Downloads\APP\APP\obj\Debug\APP.DK.resources
+C:\Users\LONG\Downloads\APP\APP\obj\Debug\APP.Properties.Resources.resources
+C:\Users\LONG\Downloads\APP\APP\obj\Debug\APP.UserFriend.resources
+C:\Users\LONG\Downloads\APP\APP\obj\Debug\APP.csproj.GenerateResource.cache
+C:\Users\LONG\Downloads\APP\APP\obj\Debug\APP.exe.licenses
+C:\Users\LONG\Downloads\APP\APP\obj\Debug\APP.csproj.CoreCompileInputs.cache
+C:\Users\LONG\Downloads\APP\APP\obj\Debug\APP.csproj.CopyComplete
+C:\Users\LONG\Downloads\APP\APP\obj\Debug\APP.exe
+C:\Users\LONG\Downloads\APP\APP\obj\Debug\APP.pdb
+C:\Users\LONG\Downloads\APP\APP\bin\Debug\FireSharp.dll
+C:\Users\LONG\Downloads\APP\APP\bin\Debug\FireSharp.Serialization.JsonNet.dll
+C:\Users\LONG\Downloads\APP\APP\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Users\LONG\Downloads\APP\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\LONG\Downloads\APP\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\LONG\Downloads\APP\APP\bin\Debug\Newtonsoft.Json.dll
+C:\Users\LONG\Downloads\APP\APP\bin\Debug\RestSharp.dll
+C:\Users\LONG\Downloads\APP\APP\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\LONG\Downloads\APP\APP\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\LONG\Downloads\APP\APP\bin\Debug\Microsoft.Threading.Tasks.xml
+C:\Users\LONG\Downloads\APP\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\LONG\Downloads\APP\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\LONG\Downloads\APP\APP\bin\Debug\Newtonsoft.Json.xml
+C:\Users\LONG\Downloads\APP\APP\bin\Debug\RestSharp.xml
+C:\Users\LONG\Downloads\APP\APP\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\LONG\Downloads\APP\APP\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\LONG\Downloads\APP\APP\obj\Debug\APP.csproj.App.config
+C:\Users\LONG\Downloads\APP\APP\obj\Debug\APP.LogIn.resources
+E:\Thử\app-main\app-main\APP\bin\Debug\APP.exe.config
+E:\Thử\app-main\app-main\APP\bin\Debug\APP.exe
+E:\Thử\app-main\app-main\APP\bin\Debug\APP.pdb
+E:\Thử\app-main\app-main\APP\bin\Debug\FireSharp.dll
+E:\Thử\app-main\app-main\APP\bin\Debug\FireSharp.Serialization.JsonNet.dll
+E:\Thử\app-main\app-main\APP\bin\Debug\Microsoft.Threading.Tasks.dll
+E:\Thử\app-main\app-main\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+E:\Thử\app-main\app-main\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+E:\Thử\app-main\app-main\APP\bin\Debug\Newtonsoft.Json.dll
+E:\Thử\app-main\app-main\APP\bin\Debug\RestSharp.dll
+E:\Thử\app-main\app-main\APP\bin\Debug\System.Net.Http.Extensions.dll
+E:\Thử\app-main\app-main\APP\bin\Debug\System.Net.Http.Primitives.dll
+E:\Thử\app-main\app-main\APP\bin\Debug\Microsoft.Threading.Tasks.xml
+E:\Thử\app-main\app-main\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+E:\Thử\app-main\app-main\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+E:\Thử\app-main\app-main\APP\bin\Debug\Newtonsoft.Json.xml
+E:\Thử\app-main\app-main\APP\bin\Debug\RestSharp.xml
+E:\Thử\app-main\app-main\APP\bin\Debug\System.Net.Http.Extensions.xml
+E:\Thử\app-main\app-main\APP\bin\Debug\System.Net.Http.Primitives.xml
+E:\Thử\app-main\app-main\APP\obj\Debug\APP.csproj.App.config
+E:\Thử\app-main\app-main\APP\obj\Debug\APP.csproj.AssemblyReference.cache
+E:\Thử\app-main\app-main\APP\obj\Debug\APP.Chat.resources
+E:\Thử\app-main\app-main\APP\obj\Debug\APP.ChatlistUser.resources
+E:\Thử\app-main\app-main\APP\obj\Debug\APP.DK.resources
+E:\Thử\app-main\app-main\APP\obj\Debug\APP.LogIn.resources
+E:\Thử\app-main\app-main\APP\obj\Debug\APP.Properties.Resources.resources
+E:\Thử\app-main\app-main\APP\obj\Debug\APP.ReMessage.resources
+E:\Thử\app-main\app-main\APP\obj\Debug\APP.UserFriend.resources
+E:\Thử\app-main\app-main\APP\obj\Debug\APP.csproj.GenerateResource.cache
+E:\Thử\app-main\app-main\APP\obj\Debug\APP.exe.licenses
+E:\Thử\app-main\app-main\APP\obj\Debug\APP.csproj.CoreCompileInputs.cache
+E:\Thử\app-main\app-main\APP\obj\Debug\APP.csproj.Up2Date
+E:\Thử\app-main\app-main\APP\obj\Debug\APP.exe
+E:\Thử\app-main\app-main\APP\obj\Debug\APP.pdb
+E:\Thử\app-main\app-main\APP\obj\Debug\APP.AddGroup.resources
+E:\Thử\app-main\app-main\APP\obj\Debug\APP.SeMessage.resources
+E:\Thử\app-main\app-main\APP\obj\Debug\APP.Resources.ChangeNameAndImae.resources
+E:\Thử\app-main\app-main\APP\obj\Debug\APP.ChangePassword.resources
+E:\Thử\app-main\app-main\APP\obj\Debug\APP.LostPassword.resources
+E:\LTMCB\test\APP\bin\Debug\APP.exe.config
+E:\LTMCB\test\APP\bin\Debug\APP.exe
+E:\LTMCB\test\APP\bin\Debug\APP.pdb
+E:\LTMCB\test\APP\bin\Debug\FireSharp.dll
+E:\LTMCB\test\APP\bin\Debug\FireSharp.Serialization.JsonNet.dll
+E:\LTMCB\test\APP\bin\Debug\Microsoft.Threading.Tasks.dll
+E:\LTMCB\test\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+E:\LTMCB\test\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+E:\LTMCB\test\APP\bin\Debug\Newtonsoft.Json.dll
+E:\LTMCB\test\APP\bin\Debug\RestSharp.dll
+E:\LTMCB\test\APP\bin\Debug\System.Net.Http.Extensions.dll
+E:\LTMCB\test\APP\bin\Debug\System.Net.Http.Primitives.dll
+E:\LTMCB\test\APP\bin\Debug\Microsoft.Threading.Tasks.xml
+E:\LTMCB\test\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+E:\LTMCB\test\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+E:\LTMCB\test\APP\bin\Debug\Newtonsoft.Json.xml
+E:\LTMCB\test\APP\bin\Debug\RestSharp.xml
+E:\LTMCB\test\APP\bin\Debug\System.Net.Http.Extensions.xml
+E:\LTMCB\test\APP\bin\Debug\System.Net.Http.Primitives.xml
+E:\LTMCB\test\APP\obj\Debug\APP.csproj.App.config
+E:\LTMCB\test\APP\obj\Debug\APP.csproj.AssemblyReference.cache
+E:\LTMCB\test\APP\obj\Debug\APP.AddGroup.resources
+E:\LTMCB\test\APP\obj\Debug\APP.ChangePassword.resources
+E:\LTMCB\test\APP\obj\Debug\APP.Chat.resources
+E:\LTMCB\test\APP\obj\Debug\APP.ChatlistUser.resources
+E:\LTMCB\test\APP\obj\Debug\APP.DK.resources
+E:\LTMCB\test\APP\obj\Debug\APP.LogIn.resources
+E:\LTMCB\test\APP\obj\Debug\APP.LostPassword.resources
+E:\LTMCB\test\APP\obj\Debug\APP.Properties.Resources.resources
+E:\LTMCB\test\APP\obj\Debug\APP.ReMessage.resources
+E:\LTMCB\test\APP\obj\Debug\APP.Resources.ChangeNameAndImae.resources
+E:\LTMCB\test\APP\obj\Debug\APP.SeMessage.resources
+E:\LTMCB\test\APP\obj\Debug\APP.UserFriend.resources
+E:\LTMCB\test\APP\obj\Debug\APP.csproj.GenerateResource.cache
+E:\LTMCB\test\APP\obj\Debug\APP.exe.licenses
+E:\LTMCB\test\APP\obj\Debug\APP.csproj.CoreCompileInputs.cache
+E:\LTMCB\test\APP\obj\Debug\APP.csproj.CopyComplete
+E:\LTMCB\test\APP\obj\Debug\APP.exe
+E:\LTMCB\test\APP\obj\Debug\APP.pdb
+E:\LTMCB\test\APP\obj\Debug\APP.ReImage.resources
+E:\LTMCB\test\APP\obj\Debug\APP.SeImage.resources
+E:\Thử\app2\APP\bin\Debug\APP.exe.config
+E:\Thử\app2\APP\bin\Debug\APP.exe
+E:\Thử\app2\APP\bin\Debug\APP.pdb
+E:\Thử\app2\APP\bin\Debug\FireSharp.dll
+E:\Thử\app2\APP\bin\Debug\FireSharp.Serialization.JsonNet.dll
+E:\Thử\app2\APP\bin\Debug\Microsoft.Threading.Tasks.dll
+E:\Thử\app2\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+E:\Thử\app2\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+E:\Thử\app2\APP\bin\Debug\Newtonsoft.Json.dll
+E:\Thử\app2\APP\bin\Debug\RestSharp.dll
+E:\Thử\app2\APP\bin\Debug\System.Net.Http.Extensions.dll
+E:\Thử\app2\APP\bin\Debug\System.Net.Http.Primitives.dll
+E:\Thử\app2\APP\bin\Debug\Microsoft.Threading.Tasks.xml
+E:\Thử\app2\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+E:\Thử\app2\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+E:\Thử\app2\APP\bin\Debug\Newtonsoft.Json.xml
+E:\Thử\app2\APP\bin\Debug\RestSharp.xml
+E:\Thử\app2\APP\bin\Debug\System.Net.Http.Extensions.xml
+E:\Thử\app2\APP\bin\Debug\System.Net.Http.Primitives.xml
+E:\Thử\app2\APP\obj\Debug\APP.csproj.App.config
+E:\Thử\app2\APP\obj\Debug\APP.csproj.AssemblyReference.cache
+E:\Thử\app2\APP\obj\Debug\APP.AddGroup.resources
+E:\Thử\app2\APP\obj\Debug\APP.ChangePassword.resources
+E:\Thử\app2\APP\obj\Debug\APP.Chat.resources
+E:\Thử\app2\APP\obj\Debug\APP.ChatlistUser.resources
+E:\Thử\app2\APP\obj\Debug\APP.DK.resources
+E:\Thử\app2\APP\obj\Debug\APP.LogIn.resources
+E:\Thử\app2\APP\obj\Debug\APP.LostPassword.resources
+E:\Thử\app2\APP\obj\Debug\APP.Properties.Resources.resources
+E:\Thử\app2\APP\obj\Debug\APP.ReImage.resources
+E:\Thử\app2\APP\obj\Debug\APP.ReMessage.resources
+E:\Thử\app2\APP\obj\Debug\APP.Resources.ChangeNameAndImae.resources
+E:\Thử\app2\APP\obj\Debug\APP.SeImage.resources
+E:\Thử\app2\APP\obj\Debug\APP.SeMessage.resources
+E:\Thử\app2\APP\obj\Debug\APP.UserFriend.resources
+E:\Thử\app2\APP\obj\Debug\APP.csproj.GenerateResource.cache
+E:\Thử\app2\APP\obj\Debug\APP.exe.licenses
+E:\Thử\app2\APP\obj\Debug\APP.csproj.CoreCompileInputs.cache
+E:\Thử\app2\APP\obj\Debug\APP.csproj.Up2Date
+E:\Thử\app2\APP\obj\Debug\APP.exe
+E:\Thử\app2\APP\obj\Debug\APP.pdb
+E:\Thử\app2\APP\obj\Debug\APP.SeFile.resources
+E:\Thử\app2\APP\obj\Debug\APP.ReFile.resources
+E:\LTMCB\app\APP\obj\Debug\APP.csproj.App.config
+E:\LTMCB\app\APP\obj\Debug\APP.csproj.AssemblyReference.cache
+E:\LTMCB\app\APP\obj\Debug\APP.AddGroup.resources
+E:\LTMCB\app\APP\obj\Debug\APP.ChangePassword.resources
+E:\LTMCB\app\APP\obj\Debug\APP.Chat.resources
+E:\LTMCB\app\APP\obj\Debug\APP.ChatlistUser.resources
+E:\LTMCB\app\APP\obj\Debug\APP.DK.resources
+E:\LTMCB\app\APP\obj\Debug\APP.LogIn.resources
+E:\LTMCB\app\APP\obj\Debug\APP.LostPassword.resources
+E:\LTMCB\app\APP\obj\Debug\APP.Properties.Resources.resources
+E:\LTMCB\app\APP\obj\Debug\APP.ReFile.resources
+E:\LTMCB\app\APP\obj\Debug\APP.ReImage.resources
+E:\LTMCB\app\APP\obj\Debug\APP.ReMessage.resources
+E:\LTMCB\app\APP\obj\Debug\APP.Resources.ChangeNameAndImae.resources
+E:\LTMCB\app\APP\obj\Debug\APP.SeFile.resources
+E:\LTMCB\app\APP\obj\Debug\APP.SeImage.resources
+E:\LTMCB\app\APP\obj\Debug\APP.SeMessage.resources
+E:\LTMCB\app\APP\obj\Debug\APP.UserFriend.resources
+E:\LTMCB\app\APP\obj\Debug\APP.csproj.GenerateResource.cache
+E:\LTMCB\app\APP\obj\Debug\APP.exe.licenses
+E:\LTMCB\app\APP\obj\Debug\APP.csproj.CoreCompileInputs.cache
+E:\LTMCB\app\APP\obj\Debug\APP.exe
+E:\LTMCB\app\APP\obj\Debug\APP.pdb
+E:\LTMCB\app\APP\bin\Debug\APP.exe.config
+E:\LTMCB\app\APP\bin\Debug\APP.exe
+E:\LTMCB\app\APP\bin\Debug\APP.pdb
+E:\LTMCB\app\APP\bin\Debug\FireSharp.dll
+E:\LTMCB\app\APP\bin\Debug\FireSharp.Serialization.JsonNet.dll
+E:\LTMCB\app\APP\bin\Debug\Microsoft.Threading.Tasks.dll
+E:\LTMCB\app\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+E:\LTMCB\app\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+E:\LTMCB\app\APP\bin\Debug\Newtonsoft.Json.dll
+E:\LTMCB\app\APP\bin\Debug\RestSharp.dll
+E:\LTMCB\app\APP\bin\Debug\System.Net.Http.Extensions.dll
+E:\LTMCB\app\APP\bin\Debug\System.Net.Http.Primitives.dll
+E:\LTMCB\app\APP\bin\Debug\Microsoft.Threading.Tasks.xml
+E:\LTMCB\app\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+E:\LTMCB\app\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+E:\LTMCB\app\APP\bin\Debug\Newtonsoft.Json.xml
+E:\LTMCB\app\APP\bin\Debug\RestSharp.xml
+E:\LTMCB\app\APP\bin\Debug\System.Net.Http.Extensions.xml
+E:\LTMCB\app\APP\bin\Debug\System.Net.Http.Primitives.xml
+E:\LTMCB\app\APP\obj\Debug\APP.csproj.CopyComplete
+E:\Thử\app\app2\APP\bin\Debug\APP.exe.config
+E:\Thử\app\app2\APP\bin\Debug\APP.exe
+E:\Thử\app\app2\APP\bin\Debug\APP.pdb
+E:\Thử\app\app2\APP\bin\Debug\FireSharp.dll
+E:\Thử\app\app2\APP\bin\Debug\FireSharp.Serialization.JsonNet.dll
+E:\Thử\app\app2\APP\bin\Debug\Microsoft.Threading.Tasks.dll
+E:\Thử\app\app2\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+E:\Thử\app\app2\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+E:\Thử\app\app2\APP\bin\Debug\Newtonsoft.Json.dll
+E:\Thử\app\app2\APP\bin\Debug\RestSharp.dll
+E:\Thử\app\app2\APP\bin\Debug\System.Net.Http.Extensions.dll
+E:\Thử\app\app2\APP\bin\Debug\System.Net.Http.Primitives.dll
+E:\Thử\app\app2\APP\bin\Debug\Microsoft.Threading.Tasks.xml
+E:\Thử\app\app2\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+E:\Thử\app\app2\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+E:\Thử\app\app2\APP\bin\Debug\Newtonsoft.Json.xml
+E:\Thử\app\app2\APP\bin\Debug\RestSharp.xml
+E:\Thử\app\app2\APP\bin\Debug\System.Net.Http.Extensions.xml
+E:\Thử\app\app2\APP\bin\Debug\System.Net.Http.Primitives.xml
+E:\Thử\app\app2\APP\obj\Debug\APP.csproj.App.config
+E:\Thử\app\app2\APP\obj\Debug\APP.csproj.AssemblyReference.cache
+E:\Thử\app\app2\APP\obj\Debug\APP.AddGroup.resources
+E:\Thử\app\app2\APP\obj\Debug\APP.ChangePassword.resources
+E:\Thử\app\app2\APP\obj\Debug\APP.Chat.resources
+E:\Thử\app\app2\APP\obj\Debug\APP.ChatlistUser.resources
+E:\Thử\app\app2\APP\obj\Debug\APP.DK.resources
+E:\Thử\app\app2\APP\obj\Debug\APP.LogIn.resources
+E:\Thử\app\app2\APP\obj\Debug\APP.LostPassword.resources
+E:\Thử\app\app2\APP\obj\Debug\APP.Properties.Resources.resources
+E:\Thử\app\app2\APP\obj\Debug\APP.ReFile.resources
+E:\Thử\app\app2\APP\obj\Debug\APP.ReImage.resources
+E:\Thử\app\app2\APP\obj\Debug\APP.ReMessage.resources
+E:\Thử\app\app2\APP\obj\Debug\APP.Resources.ChangeNameAndImae.resources
+E:\Thử\app\app2\APP\obj\Debug\APP.SeFile.resources
+E:\Thử\app\app2\APP\obj\Debug\APP.SeImage.resources
+E:\Thử\app\app2\APP\obj\Debug\APP.SeMessage.resources
+E:\Thử\app\app2\APP\obj\Debug\APP.UserFriend.resources
+E:\Thử\app\app2\APP\obj\Debug\APP.csproj.GenerateResource.cache
+E:\Thử\app\app2\APP\obj\Debug\APP.exe.licenses
+E:\Thử\app\app2\APP\obj\Debug\APP.csproj.CoreCompileInputs.cache
+E:\Thử\app\app2\APP\obj\Debug\APP.csproj.Up2Date
+E:\Thử\app\app2\APP\obj\Debug\APP.exe
+E:\Thử\app\app2\APP\obj\Debug\APP.pdb
+E:\Thử\app\app2\APP\bin\Debug\image\4.jpg
+E:\Thử\app\app2\APP\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+E:\Thử\app\app2\APP\obj\Debug\APP.SeIcon.resources
+E:\Thử\app\app2\APP\obj\Debug\APP.ReIcon.resources
+E:\Thử\app\app2\APP\obj\Debug\APP.Call.resources
+E:\Thử\app\app2\APP\obj\Debug\APP.CallWaitRe.resources
+E:\Thử\app\app2\APP\obj\Debug\APP.CallWaitSe.resources
+E:\Thử\app\app2\APP\obj\Debug\APP.UserControl1.resources
+E:\Thử\app\app2\APP\bin\Debug\Microsoft.Win32.Registry.dll
+E:\Thử\app\app2\APP\bin\Debug\NAudio.Asio.dll
+E:\Thử\app\app2\APP\bin\Debug\NAudio.Core.dll
+E:\Thử\app\app2\APP\bin\Debug\NAudio.dll
+E:\Thử\app\app2\APP\bin\Debug\NAudio.Midi.dll
+E:\Thử\app\app2\APP\bin\Debug\NAudio.Wasapi.dll
+E:\Thử\app\app2\APP\bin\Debug\NAudio.WinForms.dll
+E:\Thử\app\app2\APP\bin\Debug\NAudio.WinMM.dll
+E:\Thử\app\app2\APP\bin\Debug\System.Security.AccessControl.dll
+E:\Thử\app\app2\APP\bin\Debug\System.Security.Principal.Windows.dll
+E:\Thử\app\app2\APP\bin\Debug\Microsoft.Win32.Registry.xml
+E:\Thử\app\app2\APP\bin\Debug\NAudio.xml
+E:\Thử\app\app2\APP\bin\Debug\NAudio.Asio.xml
+E:\Thử\app\app2\APP\bin\Debug\NAudio.Core.xml
+E:\Thử\app\app2\APP\bin\Debug\NAudio.Midi.xml
+E:\Thử\app\app2\APP\bin\Debug\NAudio.Wasapi.xml
+E:\Thử\app\app2\APP\bin\Debug\NAudio.WinForms.xml
+E:\Thử\app\app2\APP\bin\Debug\NAudio.WinMM.xml
+E:\Thử\app\app2\APP\bin\Debug\System.Security.AccessControl.xml
+E:\Thử\app\app2\APP\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\image\4.jpg
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\APP.exe.config
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\APP.exe
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\APP.pdb
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\FireSharp.dll
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\FireSharp.Serialization.JsonNet.dll
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\NAudio.Asio.dll
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\NAudio.Core.dll
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\NAudio.dll
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\NAudio.Midi.dll
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\NAudio.Wasapi.dll
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\NAudio.WinForms.dll
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\NAudio.WinMM.dll
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\Newtonsoft.Json.dll
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\RestSharp.dll
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\System.Security.AccessControl.dll
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\Microsoft.Threading.Tasks.xml
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\NAudio.xml
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\NAudio.Asio.xml
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\NAudio.Core.xml
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\NAudio.Midi.xml
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\NAudio.Wasapi.xml
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\NAudio.WinForms.xml
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\NAudio.WinMM.xml
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\Newtonsoft.Json.xml
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\RestSharp.xml
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\System.Security.AccessControl.xml
+C:\Users\nguyen\Downloads\doan\app2\APP\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.csproj.App.config
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.csproj.AssemblyReference.cache
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.AddGroup.resources
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.Call.resources
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.CallWaitRe.resources
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.CallWaitSe.resources
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.ChangePassword.resources
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.Chat.resources
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.ChatlistUser.resources
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.DK.resources
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.LogIn.resources
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.LostPassword.resources
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.Properties.Resources.resources
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.ReFile.resources
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.ReIcon.resources
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.ReImage.resources
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.ReMessage.resources
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.Resources.ChangeNameAndImae.resources
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.SeFile.resources
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.SeIcon.resources
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.SeImage.resources
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.SeMessage.resources
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.UserControl1.resources
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.UserFriend.resources
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.csproj.GenerateResource.cache
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.exe.licenses
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.csproj.CoreCompileInputs.cache
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.csproj.Up2Date
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.exe
+C:\Users\nguyen\Downloads\doan\app2\APP\obj\Debug\APP.pdb
+E:\app2\APP\bin\Debug\image\4.jpg
+E:\app2\APP\bin\Debug\APP.exe.config
+E:\app2\APP\bin\Debug\APP.exe
+E:\app2\APP\bin\Debug\APP.pdb
+E:\app2\APP\bin\Debug\FireSharp.dll
+E:\app2\APP\bin\Debug\FireSharp.Serialization.JsonNet.dll
+E:\app2\APP\bin\Debug\Microsoft.Threading.Tasks.dll
+E:\app2\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+E:\app2\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+E:\app2\APP\bin\Debug\Microsoft.Win32.Registry.dll
+E:\app2\APP\bin\Debug\NAudio.Asio.dll
+E:\app2\APP\bin\Debug\NAudio.Core.dll
+E:\app2\APP\bin\Debug\NAudio.dll
+E:\app2\APP\bin\Debug\NAudio.Midi.dll
+E:\app2\APP\bin\Debug\NAudio.Wasapi.dll
+E:\app2\APP\bin\Debug\NAudio.WinForms.dll
+E:\app2\APP\bin\Debug\NAudio.WinMM.dll
+E:\app2\APP\bin\Debug\Newtonsoft.Json.dll
+E:\app2\APP\bin\Debug\RestSharp.dll
+E:\app2\APP\bin\Debug\System.Net.Http.Extensions.dll
+E:\app2\APP\bin\Debug\System.Net.Http.Primitives.dll
+E:\app2\APP\bin\Debug\System.Security.AccessControl.dll
+E:\app2\APP\bin\Debug\System.Security.Principal.Windows.dll
+E:\app2\APP\bin\Debug\Microsoft.Threading.Tasks.xml
+E:\app2\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+E:\app2\APP\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+E:\app2\APP\bin\Debug\Microsoft.Win32.Registry.xml
+E:\app2\APP\bin\Debug\NAudio.xml
+E:\app2\APP\bin\Debug\NAudio.Asio.xml
+E:\app2\APP\bin\Debug\NAudio.Core.xml
+E:\app2\APP\bin\Debug\NAudio.Midi.xml
+E:\app2\APP\bin\Debug\NAudio.Wasapi.xml
+E:\app2\APP\bin\Debug\NAudio.WinForms.xml
+E:\app2\APP\bin\Debug\NAudio.WinMM.xml
+E:\app2\APP\bin\Debug\Newtonsoft.Json.xml
+E:\app2\APP\bin\Debug\RestSharp.xml
+E:\app2\APP\bin\Debug\System.Net.Http.Extensions.xml
+E:\app2\APP\bin\Debug\System.Net.Http.Primitives.xml
+E:\app2\APP\bin\Debug\System.Security.AccessControl.xml
+E:\app2\APP\bin\Debug\System.Security.Principal.Windows.xml
+E:\app2\APP\obj\Debug\APP.csproj.App.config
+E:\app2\APP\obj\Debug\APP.csproj.AssemblyReference.cache
+E:\app2\APP\obj\Debug\APP.AddGroup.resources
+E:\app2\APP\obj\Debug\APP.Call.resources
+E:\app2\APP\obj\Debug\APP.CallWaitRe.resources
+E:\app2\APP\obj\Debug\APP.CallWaitSe.resources
+E:\app2\APP\obj\Debug\APP.ChangePassword.resources
+E:\app2\APP\obj\Debug\APP.Chat.resources
+E:\app2\APP\obj\Debug\APP.ChatlistUser.resources
+E:\app2\APP\obj\Debug\APP.DK.resources
+E:\app2\APP\obj\Debug\APP.LogIn.resources
+E:\app2\APP\obj\Debug\APP.LostPassword.resources
+E:\app2\APP\obj\Debug\APP.Properties.Resources.resources
+E:\app2\APP\obj\Debug\APP.ReFile.resources
+E:\app2\APP\obj\Debug\APP.ReIcon.resources
+E:\app2\APP\obj\Debug\APP.ReImage.resources
+E:\app2\APP\obj\Debug\APP.ReMessage.resources
+E:\app2\APP\obj\Debug\APP.Resources.ChangeNameAndImae.resources
+E:\app2\APP\obj\Debug\APP.SeFile.resources
+E:\app2\APP\obj\Debug\APP.SeIcon.resources
+E:\app2\APP\obj\Debug\APP.SeImage.resources
+E:\app2\APP\obj\Debug\APP.SeMessage.resources
+E:\app2\APP\obj\Debug\APP.UserControl1.resources
+E:\app2\APP\obj\Debug\APP.UserFriend.resources
+E:\app2\APP\obj\Debug\APP.csproj.GenerateResource.cache
+E:\app2\APP\obj\Debug\APP.exe.licenses
+E:\app2\APP\obj\Debug\APP.csproj.CoreCompileInputs.cache
+E:\app2\APP\obj\Debug\APP.csproj.CopyComplete
+E:\app2\APP\obj\Debug\APP.exe
+E:\app2\APP\obj\Debug\APP.pdb
+<<<<<<< HEAD
+=======
+E:\Thử\app2\APP\bin\Debug\image\4.jpg
+E:\Thử\app2\APP\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+E:\Thử\app2\APP\bin\Debug\Microsoft.Win32.Registry.dll
+E:\Thử\app2\APP\bin\Debug\NAudio.Asio.dll
+E:\Thử\app2\APP\bin\Debug\NAudio.Core.dll
+E:\Thử\app2\APP\bin\Debug\NAudio.dll
+E:\Thử\app2\APP\bin\Debug\NAudio.Midi.dll
+E:\Thử\app2\APP\bin\Debug\NAudio.Wasapi.dll
+E:\Thử\app2\APP\bin\Debug\NAudio.WinForms.dll
+E:\Thử\app2\APP\bin\Debug\NAudio.WinMM.dll
+E:\Thử\app2\APP\bin\Debug\System.Security.AccessControl.dll
+E:\Thử\app2\APP\bin\Debug\System.Security.Principal.Windows.dll
+E:\Thử\app2\APP\bin\Debug\Microsoft.Win32.Registry.xml
+E:\Thử\app2\APP\bin\Debug\NAudio.xml
+E:\Thử\app2\APP\bin\Debug\NAudio.Asio.xml
+E:\Thử\app2\APP\bin\Debug\NAudio.Core.xml
+E:\Thử\app2\APP\bin\Debug\NAudio.Midi.xml
+E:\Thử\app2\APP\bin\Debug\NAudio.Wasapi.xml
+E:\Thử\app2\APP\bin\Debug\NAudio.WinForms.xml
+E:\Thử\app2\APP\bin\Debug\NAudio.WinMM.xml
+E:\Thử\app2\APP\bin\Debug\System.Security.AccessControl.xml
+E:\Thử\app2\APP\bin\Debug\System.Security.Principal.Windows.xml
+E:\Thử\app2\APP\obj\Debug\APP.Call.resources
+E:\Thử\app2\APP\obj\Debug\APP.CallWaitRe.resources
+E:\Thử\app2\APP\obj\Debug\APP.CallWaitSe.resources
+E:\Thử\app2\APP\obj\Debug\APP.ReIcon.resources
+E:\Thử\app2\APP\obj\Debug\APP.SeIcon.resources
+E:\Thử\app2\APP\obj\Debug\APP.UserControl1.resources
+>>>>>>> 85de325 (longle)
