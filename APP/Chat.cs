@@ -11,6 +11,7 @@ using System.IO;
 using System.IO.Pipes;
 using System.Linq;
 using System.Net.Sockets;
+using System.Reflection;
 using System.Reflection.Emit;
 using System.Runtime.InteropServices.ComTypes;
 using System.Runtime.Remoting.Messaging;
@@ -724,7 +725,7 @@ namespace APP
                         string senderName = reader.ReadLine();
                         string imageData = reader.ReadLine();
 
-                       
+
                         receivedImage = StringToImage(imageData);
                         string savePath = "Resources\\";
                         string fileName = $"{senderName}_{DateTime.Now:yyyyMMddHHmmss}.png";
@@ -732,13 +733,13 @@ namespace APP
 
                         try
                         {
-                            
+
                             if (!System.IO.Directory.Exists(savePath))
                             {
                                 System.IO.Directory.CreateDirectory(savePath);
                             }
 
-                          
+
                             using (var bmp = new Bitmap(receivedImage))
                             {
                                 bmp.Save(fullPath, System.Drawing.Imaging.ImageFormat.Png);
@@ -820,7 +821,7 @@ namespace APP
                                 {
                                     ReIcon re = new ReIcon();
                                     re.image = Image.FromFile(Location);
-                                    
+
                                     item.Value.Controls.Add(re);
                                 }));
                             }
@@ -828,8 +829,8 @@ namespace APP
                     }
                     else if (messageFromServer == "AddFriend")
                     {
-                       
-                       
+
+
                         string sender = reader.ReadLine();
                         if (keyValuePairs2.ContainsKey(sender))
                         {
@@ -847,7 +848,7 @@ namespace APP
 
 
 
-                        
+
                         string userName = reader.ReadLine();
                         Invoke(new Action(() =>
                         {
@@ -858,12 +859,12 @@ namespace APP
 
 
 
-                            string[] newFriendList = new string[friendList.Length + 1];                            
-                           for (int i = 0; i < friendList.Length; i++)
+                            string[] newFriendList = new string[friendList.Length + 1];
+                            for (int i = 0; i < friendList.Length; i++)
                             {
                                 newFriendList[i] = friendList[i];
                             }
-                            newFriendList[friendList.Length] = userName;                           
+                            newFriendList[friendList.Length] = userName;
                             friendList = newFriendList;
 
 
@@ -879,7 +880,7 @@ namespace APP
                             temp.MouseDown += click_show_panel;
                             // thêm chatlistuser vào panel bên trái 
                             ChatlistFlowPanel.Controls.Add(temp);
-                            
+
                         }));
                         if (keyValuePairs2.ContainsKey(userName))
                         {
@@ -954,13 +955,22 @@ namespace APP
                     {
                         MessageBox.Show("Tên nhóm đã tồn tại");
                     }
-                    else if(messageFromServer == "INCOMINGCALL")
+                    else if (messageFromServer == "INCOMINGCALL")
                     {
                         string sender = reader.ReadLine();
                         Invoke(new Action(() =>
                         {
-                            Reform  = new CallWaitRe(sender, client, writer, reader, username);
+                            Reform = new CallWaitRe(sender, client, writer, reader, username);
                             Reform.Show();
+                        }));
+                    }
+                    else if (messageFromServer == "changename_success")
+                    {
+                        string newname = reader.ReadLine();
+                        MessageBox.Show("Đổi tên thành công");
+                        Invoke(new Action(() =>
+                        {
+                            bunifuLabel1.Text = newname;
                         }));
                     }
                     else if (messageFromServer == "NguoiGoiCup")
@@ -986,7 +996,7 @@ namespace APP
                         Invoke(new Action(() =>
                         {
                             Reform.Close();
-                            Callform = new Call(nguoigoi, writer, reader,username, waveIn);
+                            Callform = new Call(nguoigoi, writer, reader, username, waveIn);
                             Callform.Show();
 
                         }));
@@ -999,34 +1009,34 @@ namespace APP
                         Invoke(new Action(() =>
                         {
                             Seform.Close();
-                            Callform = new Call(nguoinhancuoigoi, writer, reader,username, waveIn);
+                            Callform = new Call(nguoinhancuoigoi, writer, reader, username, waveIn);
                             Callform.Show();
 
                         }));
                         call();
                     }
-                    else if(messageFromServer =="CALLING") 
+                    else if (messageFromServer == "CALLING")
                     {
-                        
-                            byte[] buffer = new byte[16384];
-                            while (true)
+
+                        byte[] buffer = new byte[16384];
+                        while (true)
+                        {
+                            try
                             {
-                                try
+                                int bytesRead = stream.Read(buffer, 0, buffer.Length);
+                                if (bytesRead == 0)
                                 {
-                                    int bytesRead = stream.Read(buffer, 0, buffer.Length);
-                                    if (bytesRead == 0)
-                                    {
-                                        break; // Server disconnected
-                                    }
-                                    bufferedWaveProvider.AddSamples(buffer, 0, bytesRead);
+                                    break; // Server disconnected
                                 }
-                                catch
-                                {
-                                    break; // Handle connection errors
-                                }
+                                bufferedWaveProvider.AddSamples(buffer, 0, bytesRead);
                             }
-                        
-                        
+                            catch
+                            {
+                                break; // Handle connection errors
+                            }
+                        }
+
+
                     }
 
                 }

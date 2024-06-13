@@ -37,16 +37,7 @@ namespace APP.Resources
         {
             string newname = tb_newname.Text.Trim();
             writer.WriteLine($"changename|{username}|{newname}");
-            string response = reader.ReadLine();
-            if (response != null)
-            {
-                if (response == "changename_success")
-                {
-                    MessageBox.Show("Đổi tên thành công");
-                    tb_newname.Clear();
-                    bunifuLabel1.Text = newname;
-                }
-            }
+            this.Close();
         }
     }
 }
