@@ -42,13 +42,12 @@
             this.PictureBox.AllowFocused = false;
             this.PictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PictureBox.AutoSizeHeight = true;
-            this.PictureBox.BorderRadius = 42;
+            this.PictureBox.BorderRadius = 32;
             this.PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox.Image")));
             this.PictureBox.IsCircle = true;
-            this.PictureBox.Location = new System.Drawing.Point(9, 10);
-            this.PictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PictureBox.Location = new System.Drawing.Point(7, 8);
             this.PictureBox.Name = "PictureBox";
-            this.PictureBox.Size = new System.Drawing.Size(85, 85);
+            this.PictureBox.Size = new System.Drawing.Size(64, 64);
             this.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PictureBox.TabIndex = 0;
             this.PictureBox.TabStop = false;
@@ -101,8 +100,7 @@
             this.bunifuButton1.IdleIconLeftImage = null;
             this.bunifuButton1.IdleIconRightImage = null;
             this.bunifuButton1.IndicateFocus = false;
-            this.bunifuButton1.Location = new System.Drawing.Point(251, 42);
-            this.bunifuButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuButton1.Location = new System.Drawing.Point(188, 34);
             this.bunifuButton1.Name = "bunifuButton1";
             this.bunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.OnDisabledState.BorderRadius = 20;
@@ -136,7 +134,7 @@
             this.bunifuButton1.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton1.OnPressedState.IconLeftImage = null;
             this.bunifuButton1.OnPressedState.IconRightImage = null;
-            this.bunifuButton1.Size = new System.Drawing.Size(109, 34);
+            this.bunifuButton1.Size = new System.Drawing.Size(82, 28);
             this.bunifuButton1.TabIndex = 2;
             this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -155,11 +153,10 @@
             this.lb_name.Cursor = System.Windows.Forms.Cursors.Default;
             this.lb_name.CursorType = System.Windows.Forms.Cursors.Default;
             this.lb_name.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_name.Location = new System.Drawing.Point(102, 20);
-            this.lb_name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lb_name.Location = new System.Drawing.Point(76, 16);
             this.lb_name.Name = "lb_name";
             this.lb_name.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lb_name.Size = new System.Drawing.Size(124, 28);
+            this.lb_name.Size = new System.Drawing.Size(101, 21);
             this.lb_name.TabIndex = 3;
             this.lb_name.Text = "bunifuLabel1";
             this.lb_name.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -175,11 +172,10 @@
             this.lb_uname.Cursor = System.Windows.Forms.Cursors.Default;
             this.lb_uname.CursorType = System.Windows.Forms.Cursors.Default;
             this.lb_uname.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_uname.Location = new System.Drawing.Point(103, 56);
-            this.lb_uname.Margin = new System.Windows.Forms.Padding(4);
+            this.lb_uname.Location = new System.Drawing.Point(77, 46);
             this.lb_uname.Name = "lb_uname";
             this.lb_uname.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lb_uname.Size = new System.Drawing.Size(86, 20);
+            this.lb_uname.Size = new System.Drawing.Size(69, 15);
             this.lb_uname.TabIndex = 4;
             this.lb_uname.Text = "bunifuLabel1";
             this.lb_uname.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -187,16 +183,15 @@
             // 
             // UserFriend
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.lb_uname);
             this.Controls.Add(this.lb_name);
             this.Controls.Add(this.bunifuButton1);
             this.Controls.Add(this.PictureBox);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UserFriend";
-            this.Size = new System.Drawing.Size(381, 101);
+            this.Size = new System.Drawing.Size(286, 82);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

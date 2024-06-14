@@ -1,65 +1,73 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\",
+  "WorkspaceRootPath": "E:\\Th\u1EED\\TP\\app2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\app\\lostpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|solutionrelative:app\\lostpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\app\\lostpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|solutionrelative:app\\lostpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|c:\\users\\nguyen\\downloads\\doan\\app2 (1)\\app2\\app\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|E:\\Th\u1EED\\TP\\app2\\app\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|solutionrelative:app\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\app\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|solutionrelative:app\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\app\\userfriend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|solutionrelative:app\\userfriend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\app\\userfriend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|solutionrelative:app\\userfriend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\app\\dk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|E:\\Th\u1EED\\TP\\app2\\app\\dk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|solutionrelative:app\\dk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\app\\dk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|E:\\Th\u1EED\\TP\\app2\\app\\userfriend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|solutionrelative:app\\userfriend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|E:\\Th\u1EED\\TP\\app2\\app\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|solutionrelative:app\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|e:\\th\u1EED\\tp\\app2\\app\\reicon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|solutionrelative:app\\reicon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|e:\\th\u1EED\\tp\\app2\\app\\seicon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|solutionrelative:app\\seicon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|e:\\th\u1EED\\tp\\app2\\app\\lostpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|solutionrelative:app\\lostpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|E:\\Th\u1EED\\TP\\app2\\app\\lostpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|solutionrelative:app\\lostpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|E:\\Th\u1EED\\TP\\app2\\app\\userfriend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|solutionrelative:app\\userfriend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|E:\\Th\u1EED\\TP\\app2\\app\\dk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|solutionrelative:app\\dk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\app\\chatlistuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|E:\\Th\u1EED\\TP\\app2\\app\\chatlistuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|solutionrelative:app\\chatlistuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\app\\chatlistuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|E:\\Th\u1EED\\TP\\app2\\app\\chatlistuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|solutionrelative:app\\chatlistuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\app\\changepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|E:\\Th\u1EED\\TP\\app2\\app\\changepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|solutionrelative:app\\changepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\app\\changenameandimae.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|E:\\Th\u1EED\\TP\\app2\\app\\changenameandimae.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|solutionrelative:app\\changenameandimae.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\app\\callwaitse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|E:\\Th\u1EED\\TP\\app2\\app\\callwaitse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|solutionrelative:app\\callwaitse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\app\\callwaitre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|E:\\Th\u1EED\\TP\\app2\\app\\callwaitre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|solutionrelative:app\\callwaitre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\app\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|E:\\Th\u1EED\\TP\\app2\\app\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|solutionrelative:app\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
@@ -70,15 +78,40 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
+              "Title": "ReIcon.cs [Design]",
+              "DocumentMoniker": "E:\\Th\u1EED\\TP\\app2\\APP\\ReIcon.cs",
+              "RelativeDocumentMoniker": "APP\\ReIcon.cs",
+              "ToolTip": "E:\\Th\u1EED\\TP\\app2\\APP\\ReIcon.cs [Design]",
+              "RelativeToolTip": "APP\\ReIcon.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T03:39:30.384Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SeIcon.cs [Design]",
+              "DocumentMoniker": "E:\\Th\u1EED\\TP\\app2\\APP\\SeIcon.cs",
+              "RelativeDocumentMoniker": "APP\\SeIcon.cs",
+              "ToolTip": "E:\\Th\u1EED\\TP\\app2\\APP\\SeIcon.cs [Design]",
+              "RelativeToolTip": "APP\\SeIcon.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T03:39:26.217Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "ChangePassword.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\APP\\ChangePassword.cs",
+              "DocumentMoniker": "E:\\Th\u1EED\\TP\\app2\\APP\\ChangePassword.cs",
               "RelativeDocumentMoniker": "APP\\ChangePassword.cs",
               "ToolTip": "E:\\Th\u1EED\\BAOCAO\\app2\\APP\\ChangePassword.cs [Design]",
+              "RelativeToolTip": "..\\..\\BAOCAO\\app2\\APP\\ChangePassword.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-13T15:24:54Z"
             },
@@ -86,9 +119,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Chat.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\APP\\Chat.cs",
+              "DocumentMoniker": "E:\\Th\u1EED\\TP\\app2\\APP\\Chat.cs",
               "RelativeDocumentMoniker": "APP\\Chat.cs",
-              "ToolTip": "C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\APP\\Chat.cs [Design]",
+              "ToolTip": "E:\\Th\u1EED\\TP\\app2\\APP\\Chat.cs [Design]",
               "RelativeToolTip": "APP\\Chat.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-13T14:52:16.165Z",
@@ -96,24 +129,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Chat.cs",
-              "DocumentMoniker": "C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\APP\\Chat.cs",
+              "DocumentMoniker": "E:\\Th\u1EED\\TP\\app2\\APP\\Chat.cs",
               "RelativeDocumentMoniker": "APP\\Chat.cs",
-              "ToolTip": "C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\APP\\Chat.cs",
+              "ToolTip": "E:\\Th\u1EED\\TP\\app2\\APP\\Chat.cs",
               "RelativeToolTip": "APP\\Chat.cs",
-              "ViewState": "AQIAANoCAAAAAAAAAAAowOoCAAA4AAAA",
+              "ViewState": "AQIAAJ4EAAAAAAAAAAAuwEMEAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-13T14:52:20.402Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "LostPassword.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\APP\\LostPassword.cs",
+              "DocumentMoniker": "E:\\Th\u1EED\\TP\\app2\\APP\\LostPassword.cs",
               "RelativeDocumentMoniker": "APP\\LostPassword.cs",
-              "ToolTip": "C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\APP\\LostPassword.cs [Design]",
+              "ToolTip": "E:\\Th\u1EED\\TP\\app2\\APP\\LostPassword.cs [Design]",
               "RelativeToolTip": "APP\\LostPassword.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-13T15:25:02.448Z",
@@ -121,80 +154,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "UserFriend.cs",
-              "DocumentMoniker": "C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\APP\\UserFriend.cs",
+              "DocumentMoniker": "E:\\Th\u1EED\\TP\\app2\\APP\\UserFriend.cs",
               "RelativeDocumentMoniker": "APP\\UserFriend.cs",
-              "ToolTip": "C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\APP\\UserFriend.cs",
+              "ToolTip": "E:\\Th\u1EED\\TP\\app2\\APP\\UserFriend.cs",
               "RelativeToolTip": "APP\\UserFriend.cs",
               "ViewState": "AQIAACEAAAAAAAAAAAASwDEAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T15:14:55.316Z"
+              "WhenOpened": "2024-06-13T15:14:55.316Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "LostPassword.cs",
-              "DocumentMoniker": "C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\APP\\LostPassword.cs",
+              "DocumentMoniker": "E:\\Th\u1EED\\TP\\app2\\APP\\LostPassword.cs",
               "RelativeDocumentMoniker": "APP\\LostPassword.cs",
-              "ToolTip": "C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\APP\\LostPassword.cs",
+              "ToolTip": "E:\\Th\u1EED\\TP\\app2\\APP\\LostPassword.cs",
               "RelativeToolTip": "APP\\LostPassword.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAqwDMAAABCAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAqwCQAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-13T17:52:34.292Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "UserFriend.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\APP\\UserFriend.cs",
+              "DocumentMoniker": "E:\\Th\u1EED\\TP\\app2\\APP\\UserFriend.cs",
               "RelativeDocumentMoniker": "APP\\UserFriend.cs",
-              "ToolTip": "C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\APP\\UserFriend.cs [Design]",
+              "ToolTip": "E:\\Th\u1EED\\TP\\app2\\APP\\UserFriend.cs [Design]",
               "RelativeToolTip": "APP\\UserFriend.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T15:13:34.033Z"
+              "WhenOpened": "2024-06-13T15:13:34.033Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "DK.cs",
-              "DocumentMoniker": "C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\APP\\DK.cs",
+              "DocumentMoniker": "E:\\Th\u1EED\\TP\\app2\\APP\\DK.cs",
               "RelativeDocumentMoniker": "APP\\DK.cs",
-              "ToolTip": "C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\APP\\DK.cs",
+              "ToolTip": "E:\\Th\u1EED\\TP\\app2\\APP\\DK.cs",
               "RelativeToolTip": "APP\\DK.cs",
-              "ViewState": "AQIAAJsAAAAAAAAAAAAmwAAAAAAAAAAA",
+              "ViewState": "AQIAADoAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T17:24:56.442Z"
+              "WhenOpened": "2024-06-13T17:24:56.442Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "DK.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\APP\\DK.cs",
+              "DocumentMoniker": "E:\\Th\u1EED\\TP\\app2\\APP\\DK.cs",
               "RelativeDocumentMoniker": "APP\\DK.cs",
-              "ToolTip": "C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\APP\\DK.cs [Design]",
+              "ToolTip": "E:\\Th\u1EED\\TP\\app2\\APP\\DK.cs [Design]",
               "RelativeToolTip": "APP\\DK.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T15:32:18.87Z"
+              "WhenOpened": "2024-06-13T15:32:18.87Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "ChangeNameAndImae.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\APP\\ChangeNameAndImae.cs",
+              "DocumentMoniker": "E:\\Th\u1EED\\TP\\app2\\APP\\ChangeNameAndImae.cs",
               "RelativeDocumentMoniker": "APP\\ChangeNameAndImae.cs",
               "ToolTip": "E:\\Th\u1EED\\BAOCAO\\app2\\APP\\ChangeNameAndImae.cs [Design]",
+              "RelativeToolTip": "..\\..\\BAOCAO\\app2\\APP\\ChangeNameAndImae.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-13T15:24:21.205Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "packages.config",
-              "DocumentMoniker": "C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\APP\\packages.config",
+              "DocumentMoniker": "E:\\Th\u1EED\\TP\\app2\\APP\\packages.config",
               "RelativeDocumentMoniker": "APP\\packages.config",
-              "ToolTip": "C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\APP\\packages.config",
+              "ToolTip": "E:\\Th\u1EED\\TP\\app2\\APP\\packages.config",
               "RelativeToolTip": "APP\\packages.config",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
@@ -202,11 +240,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "ChatlistUser.cs",
-              "DocumentMoniker": "C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\APP\\ChatlistUser.cs",
+              "DocumentMoniker": "E:\\Th\u1EED\\TP\\app2\\APP\\ChatlistUser.cs",
               "RelativeDocumentMoniker": "APP\\ChatlistUser.cs",
-              "ToolTip": "C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\APP\\ChatlistUser.cs",
+              "ToolTip": "E:\\Th\u1EED\\TP\\app2\\APP\\ChatlistUser.cs",
               "RelativeToolTip": "APP\\ChatlistUser.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -214,31 +252,34 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "CallWaitRe.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\APP\\CallWaitRe.cs",
+              "DocumentMoniker": "E:\\Th\u1EED\\TP\\app2\\APP\\CallWaitRe.cs",
               "RelativeDocumentMoniker": "APP\\CallWaitRe.cs",
               "ToolTip": "E:\\Th\u1EED\\BAOCAO\\app2\\APP\\CallWaitRe.cs [Design]",
+              "RelativeToolTip": "..\\..\\BAOCAO\\app2\\APP\\CallWaitRe.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-13T15:28:30.826Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "CallWaitSe.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\APP\\CallWaitSe.cs",
+              "DocumentMoniker": "E:\\Th\u1EED\\TP\\app2\\APP\\CallWaitSe.cs",
               "RelativeDocumentMoniker": "APP\\CallWaitSe.cs",
               "ToolTip": "E:\\Th\u1EED\\BAOCAO\\app2\\APP\\CallWaitSe.cs [Design]",
+              "RelativeToolTip": "..\\..\\BAOCAO\\app2\\APP\\CallWaitSe.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-13T15:28:31.813Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "ChatlistUser.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\nguyen\\Downloads\\doan\\app2 (1)\\app2\\APP\\ChatlistUser.cs",
+              "DocumentMoniker": "E:\\Th\u1EED\\TP\\app2\\APP\\ChatlistUser.cs",
               "RelativeDocumentMoniker": "APP\\ChatlistUser.cs",
               "ToolTip": "E:\\Th\u1EED\\BAOCAO\\app2\\APP\\ChatlistUser.cs [Design]",
+              "RelativeToolTip": "..\\..\\BAOCAO\\app2\\APP\\ChatlistUser.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-13T15:15:50.09Z"
             }

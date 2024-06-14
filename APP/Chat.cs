@@ -1088,7 +1088,7 @@ namespace APP
                             }
                         }
                         
-                        MessageBox.Show("client close call");
+                        //essageBox.Show("client close call");
                         
 
                     }
