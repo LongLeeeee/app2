@@ -30,34 +30,28 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserFriend));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            this.Name2 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.PictureBox = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.NameUser = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.lb_name = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lb_uname = new Bunifu.UI.WinForms.BunifuLabel();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // Name2
+            // PictureBox
             // 
-            this.Name2.AllowParentOverrides = false;
-            this.Name2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Name2.AutoEllipsis = false;
-            this.Name2.AutoSize = false;
-            this.Name2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Name2.CursorType = System.Windows.Forms.Cursors.Default;
-            this.Name2.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.Name2.ForeColor = System.Drawing.Color.DimGray;
-            this.Name2.Location = new System.Drawing.Point(86, 45);
-            this.Name2.Name = "Name2";
-            this.Name2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Name2.Size = new System.Drawing.Size(187, 16);
-            this.Name2.TabIndex = 1;
-            this.Name2.Text = "bunifuLabel1";
-            this.Name2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.Name2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.Name2.Click += new System.EventHandler(this.Name2_Click);
+            this.PictureBox.AllowFocused = false;
+            this.PictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PictureBox.AutoSizeHeight = true;
+            this.PictureBox.BorderRadius = 32;
+            this.PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox.Image")));
+            this.PictureBox.IsCircle = true;
+            this.PictureBox.Location = new System.Drawing.Point(7, 8);
+            this.PictureBox.Name = "PictureBox";
+            this.PictureBox.Size = new System.Drawing.Size(64, 64);
+            this.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PictureBox.TabIndex = 0;
+            this.PictureBox.TabStop = false;
+            this.PictureBox.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
             // bunifuButton1
             // 
@@ -106,7 +100,7 @@
             this.bunifuButton1.IdleIconLeftImage = null;
             this.bunifuButton1.IdleIconRightImage = null;
             this.bunifuButton1.IndicateFocus = false;
-            this.bunifuButton1.Location = new System.Drawing.Point(191, 28);
+            this.bunifuButton1.Location = new System.Drawing.Point(188, 34);
             this.bunifuButton1.Name = "bunifuButton1";
             this.bunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.OnDisabledState.BorderRadius = 20;
@@ -149,49 +143,52 @@
             this.bunifuButton1.UseDefaultRadiusAndThickness = true;
             this.bunifuButton1.Click += new System.EventHandler(this.bunifuButton1_Click);
             // 
-            // PictureBox
+            // lb_name
             // 
-            this.PictureBox.AllowFocused = false;
-            this.PictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.PictureBox.AutoSizeHeight = true;
-            this.PictureBox.BorderRadius = 32;
-            this.PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox.Image")));
-            this.PictureBox.IsCircle = true;
-            this.PictureBox.Location = new System.Drawing.Point(7, 8);
-            this.PictureBox.Name = "PictureBox";
-            this.PictureBox.Size = new System.Drawing.Size(64, 64);
-            this.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox.TabIndex = 0;
-            this.PictureBox.TabStop = false;
-            this.PictureBox.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            // 
-            // NameUser
-            // 
-            this.NameUser.AllowParentOverrides = false;
-            this.NameUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lb_name.AllowParentOverrides = false;
+            this.lb_name.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.NameUser.AutoEllipsis = false;
-            this.NameUser.Cursor = System.Windows.Forms.Cursors.Default;
-            this.NameUser.CursorType = System.Windows.Forms.Cursors.Default;
-            this.NameUser.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.NameUser.Location = new System.Drawing.Point(86, 20);
-            this.NameUser.Name = "NameUser";
-            this.NameUser.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.NameUser.Size = new System.Drawing.Size(87, 20);
-            this.NameUser.TabIndex = 3;
-            this.NameUser.Text = "bunifuLabel1";
-            this.NameUser.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.NameUser.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lb_name.AutoEllipsis = false;
+            this.lb_name.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lb_name.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lb_name.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_name.Location = new System.Drawing.Point(76, 16);
+            this.lb_name.Name = "lb_name";
+            this.lb_name.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lb_name.Size = new System.Drawing.Size(101, 21);
+            this.lb_name.TabIndex = 3;
+            this.lb_name.Text = "bunifuLabel1";
+            this.lb_name.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lb_name.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // lb_uname
+            // 
+            this.lb_uname.AllowParentOverrides = false;
+            this.lb_uname.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lb_uname.AutoEllipsis = false;
+            this.lb_uname.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lb_uname.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lb_uname.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_uname.Location = new System.Drawing.Point(77, 46);
+            this.lb_uname.Name = "lb_uname";
+            this.lb_uname.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lb_uname.Size = new System.Drawing.Size(69, 15);
+            this.lb_uname.TabIndex = 4;
+            this.lb_uname.Text = "bunifuLabel1";
+            this.lb_uname.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lb_uname.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // UserFriend
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.NameUser);
+            this.Controls.Add(this.lb_uname);
+            this.Controls.Add(this.lb_name);
             this.Controls.Add(this.bunifuButton1);
-            this.Controls.Add(this.Name2);
             this.Controls.Add(this.PictureBox);
             this.Name = "UserFriend";
             this.Size = new System.Drawing.Size(286, 82);
@@ -204,8 +201,8 @@
         #endregion
 
         private Bunifu.UI.WinForms.BunifuPictureBox PictureBox;
-        private Bunifu.UI.WinForms.BunifuLabel Name2;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
-        private Bunifu.UI.WinForms.BunifuLabel NameUser;
+        private Bunifu.UI.WinForms.BunifuLabel lb_name;
+        private Bunifu.UI.WinForms.BunifuLabel lb_uname;
     }
 }

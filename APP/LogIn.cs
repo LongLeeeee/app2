@@ -43,7 +43,7 @@ namespace APP
             tcpClient = new TcpClient();
             try
             {
-                tcpClient.Connect(IPAddress.Parse("127.0.0.1"), 8080);
+                tcpClient.Connect(IPAddress.Parse("192.168.217.168"), 8080);
 
             }
             catch

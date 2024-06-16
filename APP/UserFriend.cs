@@ -9,13 +9,14 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace APP
 {
     public partial class UserFriend : UserControl
     {
         TcpClient client;
-        string userName, name;
+        string userName;
         int request;
         StreamWriter sw;
         StreamReader sr;
@@ -50,8 +51,8 @@ namespace APP
             set
             {
                 _username = value;
-                NameUser.Text = $"{getname(value)}";
-                Name2.Text = value;
+                lb_name.Text = $"{getname(value)}";
+                lb_uname.Text = value;
             }
         }
         [Category("custom")]

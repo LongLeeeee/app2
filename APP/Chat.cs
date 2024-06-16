@@ -31,7 +31,7 @@ namespace APP
         private Thread receiveThread;
         private TcpClient client;
         private string username, email, name;
-        private ChatlistUser[] chatlistUsers;
+        private ChatlistUser[] chatlistUsers = new ChatlistUser[100];
         private UserFriend[] listFriends;
         private string[] notiList;
         private StreamReader reader;
@@ -87,9 +87,7 @@ namespace APP
             Image image = Image.FromFile("Resources\\Logo2.png");
             logo.Image = image;
             logo.SizeMode = PictureBoxSizeMode.CenterImage;
-            //logo.Padding = new Padding(50);
             logo.Dock = DockStyle.Fill;
-            
             panel2.Controls.Add(logo);
             display(false);
         }
@@ -150,31 +148,42 @@ namespace APP
                 {
                     chatRoomList.Add(item);
                 }
-                chatlistUsers = new ChatlistUser[groupList.Length];
-                for (int i = 0; i < chatlistUsers.Length; i++)
+                ChatlistUser[] chatlistUsers1 = new ChatlistUser[groupList.Length];
+                for (int i = 0; i < groupList.Length; i++)
                 {
                     if (groupList[i] != "")
                     {
                         Invoke(new Action(() =>
                         {
-                            chatlistUsers[i] = new ChatlistUser();
+                            chatlistUsers1[i] = new ChatlistUser();
                             Image image = Image.FromFile("Resources\\avata.jpg");
                             // tạo ra 1 chatlistuser
-                            chatlistUsers[i].username = groupList[i];
-                            chatlistUsers[i].userimage = image;
-                            //chatlistUsers[i].BorderStyle = BorderStyle.FixedSingle;
+                            chatlistUsers1[i].username = groupList[i];
+                            chatlistUsers1[i].userimage = image;
+                            //chatlistUsers1[i].BorderStyle = BorderStyle.FixedSingle;
                             // tạo ra 1 flowlayoutpanel tương ứng với chatlistuser ở trên
                             FlowLayoutPanel tempFlowLayoutPanel = createFlowlayoutPanel();
                             //getRoomKey(groupList[i]);
-                            keyValuePairs.Add(chatlistUsers[i], getRoomKey(groupList[i]));
-                            chatListUserToFlowLayoutPanelMap.Add(chatlistUsers[i], tempFlowLayoutPanel);
+                            keyValuePairs.Add(chatlistUsers1[i], getRoomKey(groupList[i]));
+                            chatListUserToFlowLayoutPanelMap.Add(chatlistUsers1[i], tempFlowLayoutPanel);
                             // gán sự kiện hiển thị flowlayoutpanel khi ấn vào chatlistuser tương ứng
-                            chatlistUsers[i].MouseDown += click_show_panel;
+                            chatlistUsers1[i].MouseDown += click_show_panel;
                             ContactNameConversation.Text = "Unknow";
                             //ContactNameMore.Text = "Unknow";
                             // thêm chatlistuser vào panel bên trái 
-                            ChatlistFlowPanel.Controls.Add(chatlistUsers[i]);
+                            ChatlistFlowPanel.Controls.Add(chatlistUsers1[i]);
                         }));
+                    }
+                    if(friendList != null)
+                    {
+
+                        int m = friendList.Length;
+                        foreach (var item in chatlistUsers1)
+                        {
+                            chatlistUsers[m] = new ChatlistUser();
+                            chatlistUsers[m] = item;
+                            m++;
+                        }
                     }
                 }
 
@@ -431,6 +440,7 @@ namespace APP
                                 listFriends[i].userimage = image;
                                 listFriends[i].username = userList[i];
                                 keyValuePairs2.Add(userList[i], listFriends[i]);
+                            
                                 if (flowLayoutPanelListfriend.Controls.Count < 0)
                                 {
                                     flowLayoutPanelListfriend.Controls.Clear();
@@ -475,8 +485,7 @@ namespace APP
         {
             if (friendList != null)
             {
-                chatlistUsers = new ChatlistUser[friendList.Length];
-                for (int i = 0; i < chatlistUsers.Length; i++)
+                for (int i = 0; i < friendList.Length; i++)
                 {
                     if (friendList[i] != "")
                     {
@@ -522,7 +531,7 @@ namespace APP
                         
                         if(clickedChatListUser.username == ContactNameConversation.Text)
                         {
-                            clickedChatListUser.BackColor = Color.WhiteSmoke;
+                            clickedChatListUser.BackColor = Color.FromArgb(235, 245, 255);
                         }
                     }
                     else 
@@ -552,11 +561,14 @@ namespace APP
         }
         private void add_Click(object sender, EventArgs e)
         {
-            
+
             AddGroup form = new AddGroup(friendList, writer, username);
+
             form.ShowDialog();
+
+
         }
-        
+
         private void More_Click(object sender, EventArgs e)
         {
             
@@ -781,7 +793,7 @@ namespace APP
                         string sendername = reader.ReadLine();
                         string filename = reader.ReadLine();
                         long filesize = Convert.ToInt64(reader.ReadLine());
-                        string filePath = Path.Combine("Resources\\", filename);
+                        string filePath = Path.Combine("File\\", filename);
                         byte[] buffer = new byte[52428800];
                         int bytesRead;
                         long bytesReceived = 0;
@@ -853,17 +865,20 @@ namespace APP
                     else if (messageFromServer == "AcceptedSuccessfullyForReceiver")
                     {
                         string userName = reader.ReadLine();
-
                         Invoke(new Action(() =>
                         {
-
                             ChatlistUser temp = new ChatlistUser();
                             Image image = Image.FromFile("Resources\\avata.jpg");
                             // tạo ra 1 chatlistuser
                             temp.username = userName;
-
-
-
+                            if (friendList != null)
+                            {
+                                friendList = new string[friendList.Length + 1];
+                            }
+                            else
+                            {
+                                friendList = new string[1];
+                            }
                             string[] newFriendList = new string[friendList.Length + 1];
                             for (int i = 0; i < friendList.Length; i++)
                             {
@@ -871,28 +886,20 @@ namespace APP
                             }
                             newFriendList[friendList.Length] = userName;
                             friendList = newFriendList;
-
-
-
-
                             temp.userimage = image;
                             // tạo ra 1 flowlayoutpanel tương ứng với chatlistuser ở trên
                             FlowLayoutPanel tempFlowLayoutPanel = createFlowlayoutPanel();
                             getRoomKey(username, userName);
                             keyValuePairs.Add(temp, getRoomKey(username, userName));
                             chatListUserToFlowLayoutPanelMap.Add(temp, tempFlowLayoutPanel);
-
-                        
                             // gán sự kiện hiển thị flowlayoutpanel khi ấn vào chatlistuser tương ứng
                             temp.MouseDown += click_show_panel;
                             // thêm chatlistuser vào panel bên trái 
                             ChatlistFlowPanel.Controls.Add(temp);
-                            
 
                         }));
-                        if (keyValuePairs2.ContainsKey(userName))
+                        if (userList.Contains(userName))
                         {
-                            MessageBox.Show(userName);
                             Invoke(new Action(() =>
                             {
                                 flowLayoutPanelListfriend.Controls.Remove(keyValuePairs2[userName]);
@@ -902,14 +909,19 @@ namespace APP
                     else if (messageFromServer == "AcceptedSuccessfullyForSender")
                     {
                         string userName = reader.ReadLine();
-                        //Thread.Sleep(2000);
                         Invoke(new Action(() =>
                         {
-
                             ChatlistUser temp = new ChatlistUser();
                             Image image = Image.FromFile("Resources\\avata.jpg");
                             // tạo ra 1 chatlistuser
                             temp.username = userName;
+                            if (friendList != null)
+                            {
+                                friendList = new string[friendList.Length + 1];
+                            }
+                            else {
+                                friendList = new string[1];
+                            }
                             string[] newFriendList = new string[friendList.Length + 1];
                             for (int i = 0; i < friendList.Length; i++)
                             {
@@ -918,24 +930,19 @@ namespace APP
                             newFriendList[friendList.Length] = userName;
                             friendList = newFriendList;
                             temp.userimage = image;
-
-
-
                             //temp.BorderStyle = BorderStyle.FixedSingle;
                             // tạo ra 1 flowlayoutpanel tương ứng với chatlistuser ở trên
                             FlowLayoutPanel tempFlowLayoutPanel = createFlowlayoutPanel();
                             getRoomKey(username, userName);
                             keyValuePairs.Add(temp, getRoomKey(username, userName));
                             chatListUserToFlowLayoutPanelMap.Add(temp, tempFlowLayoutPanel);
-                       
                             // gán sự kiện hiển thị flowlayoutpanel khi ấn vào chatlistuser tương ứng
                             temp.MouseDown += click_show_panel;
                             // thêm chatlistuser vào panel bên trái 
                             ChatlistFlowPanel.Controls.Add(temp);
                         }));
-                        if (keyValuePairs2.ContainsKey(userName))
+                        if (userList.Contains(userName))
                         {
-                            MessageBox.Show(userName);
                             Invoke(new Action(() =>
                             {
                                 flowLayoutPanelListfriend.Controls.Remove(keyValuePairs2[userName]);
@@ -1092,7 +1099,7 @@ namespace APP
                             }
                         }
                         
-                        MessageBox.Show("client close call");
+                        //essageBox.Show("client close call");
                         
 
                     }
@@ -1257,8 +1264,6 @@ namespace APP
         }
 
         private void bunifuImageButton1_Click_1(object sender, EventArgs e)
-
-
         {
             string searchText = bunifuTextBox2.Text;
 
@@ -1279,7 +1284,7 @@ namespace APP
                 {
                     if (item != null)
                     {
-                        if (item.username.IndexOf(searchText, StringComparison.OrdinalIgnoreCase) != -1)
+                        if (item.username.Contains(searchText))
                         {
                             item.Visible = true;
                             foundResult = true; // Kết quả được tìm thấy
@@ -1498,7 +1503,6 @@ namespace APP
         private void bunifuImageButton4_Click(object sender, EventArgs e)
         {
 
-           
 
             if (listFriend.Visible == false || Detail.Visible == true)
             {
@@ -1513,8 +1517,13 @@ namespace APP
             else if (listFriend.Visible == true)
             {
                 listFriend.Visible = false;
-                add.BackColor = Color.WhiteSmoke;
+                bunifuImageButton4.BackColor = Color.WhiteSmoke;
             }
+
+
+
+
+
 
         }
 
