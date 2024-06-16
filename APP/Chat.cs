@@ -867,9 +867,13 @@ namespace APP
                             Image image = Image.FromFile("Resources\\avata.jpg");
                             // tạo ra 1 chatlistuser
                             temp.username = userName;
-                            if (friendList == null)
+                            if (friendList != null)
                             {
                                 friendList = new string[friendList.Length + 1];
+                            }
+                            else
+                            {
+                                friendList = new string[1];
                             }
                             string[] newFriendList = new string[friendList.Length + 1];
                             for (int i = 0; i < friendList.Length; i++)
@@ -890,7 +894,7 @@ namespace APP
                             ChatlistFlowPanel.Controls.Add(temp);
 
                         }));
-                        if (keyValuePairs2.ContainsKey(userName))
+                        if (userList.Contains(userName))
                         {
                             Invoke(new Action(() =>
                             {
@@ -907,9 +911,12 @@ namespace APP
                             Image image = Image.FromFile("Resources\\avata.jpg");
                             // tạo ra 1 chatlistuser
                             temp.username = userName;
-                            if (friendList == null)
+                            if (friendList != null)
                             {
                                 friendList = new string[friendList.Length + 1];
+                            }
+                            else {
+                                friendList = new string[1];
                             }
                             string[] newFriendList = new string[friendList.Length + 1];
                             for (int i = 0; i < friendList.Length; i++)
@@ -919,7 +926,7 @@ namespace APP
                             newFriendList[friendList.Length] = userName;
                             friendList = newFriendList;
                             temp.userimage = image;
-                            temp.BorderStyle = BorderStyle.FixedSingle;
+                            //temp.BorderStyle = BorderStyle.FixedSingle;
                             // tạo ra 1 flowlayoutpanel tương ứng với chatlistuser ở trên
                             FlowLayoutPanel tempFlowLayoutPanel = createFlowlayoutPanel();
                             getRoomKey(username, userName);
@@ -930,7 +937,7 @@ namespace APP
                             // thêm chatlistuser vào panel bên trái 
                             ChatlistFlowPanel.Controls.Add(temp);
                         }));
-                        if (keyValuePairs2.ContainsKey(userName))
+                        if (userList.Contains(userName))
                         {
                             Invoke(new Action(() =>
                             {
@@ -953,7 +960,7 @@ namespace APP
                             // tạo ra 1 chatlistuser
                             temp.username = groupName;
                             temp.userimage = image;
-                            temp.BorderStyle = BorderStyle.FixedSingle;
+                            //temp.BorderStyle = BorderStyle.FixedSingle;
 
                             // tạo ra 1 flowlayoutpanel tương ứng với chatlistuser ở trên
                             FlowLayoutPanel tempFlowLayoutPanel = createFlowlayoutPanel();
