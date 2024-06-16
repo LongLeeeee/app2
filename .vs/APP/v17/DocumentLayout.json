@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "E:\\Th\u1EED\\TP\\app2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|e:\\th\u1EED\\tp\\app2\\app\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|solutionrelative:app\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|E:\\Th\u1EED\\TP\\app2\\app\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|solutionrelative:app\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|E:\\Th\u1EED\\TP\\app2\\app\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|solutionrelative:app\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|e:\\th\u1EED\\tp\\app2\\app\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|E:\\Th\u1EED\\TP\\app2\\app\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|solutionrelative:app\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|e:\\th\u1EED\\tp\\app2\\app\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|solutionrelative:app\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|E:\\Th\u1EED\\TP\\app2\\app\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|solutionrelative:app\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC669291-1A74-42F7-AF59-33270A202B63}|APP\\APP.csproj|E:\\Th\u1EED\\TP\\app2\\app\\userfriend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -90,11 +90,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "App.config",
               "DocumentMoniker": "E:\\Th\u1EED\\TP\\app2\\APP\\App.config",
               "RelativeDocumentMoniker": "APP\\App.config",
@@ -107,13 +107,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "LogIn.cs",
               "DocumentMoniker": "E:\\Th\u1EED\\TP\\app2\\APP\\LogIn.cs",
               "RelativeDocumentMoniker": "APP\\LogIn.cs",
               "ToolTip": "E:\\Th\u1EED\\TP\\app2\\APP\\LogIn.cs",
               "RelativeToolTip": "APP\\LogIn.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAcwC0AAAA8AAAA",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAYwHYAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-14T05:34:34.586Z",
               "EditorCaption": ""
@@ -165,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Chat.cs [Design]",
               "DocumentMoniker": "E:\\Th\u1EED\\TP\\app2\\APP\\Chat.cs",
               "RelativeDocumentMoniker": "APP\\Chat.cs",
@@ -177,13 +177,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Chat.cs",
               "DocumentMoniker": "E:\\Th\u1EED\\TP\\app2\\APP\\Chat.cs",
               "RelativeDocumentMoniker": "APP\\Chat.cs",
               "ToolTip": "E:\\Th\u1EED\\TP\\app2\\APP\\Chat.cs",
               "RelativeToolTip": "APP\\Chat.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAQwIEEAAAAAAAA",
+              "ViewState": "AQIAAOkFAAAAAAAAAAAAAPIFAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-13T14:52:20.402Z",
               "EditorCaption": ""
@@ -309,10 +309,11 @@
               "Title": "CallWaitSe.cs [Design]",
               "DocumentMoniker": "E:\\Th\u1EED\\TP\\app2\\APP\\CallWaitSe.cs",
               "RelativeDocumentMoniker": "APP\\CallWaitSe.cs",
-              "ToolTip": "E:\\Th\u1EED\\BAOCAO\\app2\\APP\\CallWaitSe.cs [Design]",
-              "RelativeToolTip": "..\\..\\BAOCAO\\app2\\APP\\CallWaitSe.cs [Design]",
+              "ToolTip": "E:\\Th\u1EED\\TP\\app2\\APP\\CallWaitSe.cs [Design]",
+              "RelativeToolTip": "APP\\CallWaitSe.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T15:28:31.813Z"
+              "WhenOpened": "2024-06-13T15:28:31.813Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",

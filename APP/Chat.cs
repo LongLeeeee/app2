@@ -174,12 +174,16 @@ namespace APP
                             ChatlistFlowPanel.Controls.Add(chatlistUsers1[i]);
                         }));
                     }
-                    int m = friendList.Length;
-                    foreach (var item in chatlistUsers1)
+                    if(friendList != null)
                     {
-                        chatlistUsers[m] = new ChatlistUser();
-                        chatlistUsers[m] = item;
-                        m++;
+
+                        int m = friendList.Length;
+                        foreach (var item in chatlistUsers1)
+                        {
+                            chatlistUsers[m] = new ChatlistUser();
+                            chatlistUsers[m] = item;
+                            m++;
+                        }
                     }
                 }
 
@@ -789,7 +793,7 @@ namespace APP
                         string sendername = reader.ReadLine();
                         string filename = reader.ReadLine();
                         long filesize = Convert.ToInt64(reader.ReadLine());
-                        string filePath = Path.Combine("Resources\\", filename);
+                        string filePath = Path.Combine("File\\", filename);
                         byte[] buffer = new byte[52428800];
                         int bytesRead;
                         long bytesReceived = 0;
